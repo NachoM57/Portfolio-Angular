@@ -1,0 +1,28 @@
+/*Sobremi*/
+
+#sobremi {
+    position: relative;
+  }
+  .nombre{
+  padding-left: 10%;
+  }
+  .blockabout {
+    padding: 10px;
+    background: transparent;
+  }
+  
+  .blockabout-inner {
+    padding: 100px;
+    border: 2px solid #0000ff;
+    font-size: large;
+  }
+  #perfil{
+  position:absolute;
+  left: 20px;
+  }
+  
+  .col-6.mt-4{
+      position: absolute;
+      right: 90px;
+  }
+  
