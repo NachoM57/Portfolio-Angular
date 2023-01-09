@@ -1,0 +1,117 @@
+{
+    "banner": "../assets/imagenes/imagen 4.webp",
+    "imagenperfil": "../assets/imagenes/foto de perfil.jpg",
+    "nombre": "Ignacio",
+    "apellido": "Maiorino",
+    "titulo": "Desarrolador Web Full Stack Jr",
+    "subtitulo": "Sobre mi",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere sequi, quia, est sed dicta aliquid quidem facilis culpa iure perferendis? Dolor ad quia deserunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.",
+    "imagenproyecto": "../assets/imagenes/imagen 2.webp",
+
+     "experiencias": 
+[
+   { "id": 1,
+    "puesto": "Repositor de Mercaderia",
+    "lugar": "Supermercado El Delfin",
+    "inicio": "2016",
+    "fin": "2017"
+    },
+  {  "id": 2,
+    "puesto": "Vendedor, Repartidor y Promotor",
+    "lugar": "Distribuidora de Arcor Mario Chialvo srl",
+    "inicio": "2017",
+    "fin": "2022"
+     }
+],
+
+"educaciones": 
+[
+   {  "id": 1,
+    "estudio": "Primario y Secundario",
+    "lugar": "Colegio Nuestra Señora Del Huerto",
+    "inicio": "2003",
+    "fin": "2015",
+    "descripcion": "Bachiller con orientación en Ciencias Sociales y Humanidades."
+    },
+   {  "id": 2,
+    "estudio": "Curso Argentina Programa, Se Programar",
+    "lugar": "",
+    "inicio": "2022",
+    "fin": "",
+    "descripcion": ""
+   },
+   {  "id": 3,
+    "estudio": "Curso Arbitraje Criptomonedas",
+    "lugar": "",
+    "inicio": "2021",
+    "fin": "2022",
+    "descripcion": ""
+  },
+  {  "id": 4,
+    "estudio": "Curso Argentina Programa, Yo Programo",
+    "lugar": "",
+    "inicio": "2022",
+    "fin": "2023",
+    "descripcion": ""
+  }
+ ],
+
+ "habilidadesduras": 
+ [
+  {  "id": 1,
+   "habilidad": "HTML5",
+   "porcentaje": "60",
+   "progreso": "progress-circle progress-60"
+  },
+  {  "id": 2,
+   "habilidad":"CSS3",
+   "porcentaje": "40",
+   "progreso": "progress-circle progress-40"
+  },
+  {  "id": 3,
+   "habilidad": "JAVASCRIPT",
+   "porcentaje": "20",
+   "progreso": "progress-circle progress-20"
+  },
+  {  "id": 4,
+   "habilidad": "PHOTOSHOP",
+   "porcentaje": "30",
+   "progreso": "progress-circle progress-30"
+  },
+  {  "id": 5,
+  "habilidad": "BOOSTRAP",
+  "porcentaje": "40",
+  "progreso": "progress-circle progress-40"
+ },
+ {  "id": 6,
+ "habilidad": "ANGULAR",
+ "porcentaje": "55",
+ "progreso": "progress-circle progress-55"
+}
+  ],
+
+  "habilidadesblandas": 
+  [
+   {  "id": 1,
+    "icono": "fa-regular fa-lightbulb fa-2xl",
+    "titulo": "Creatividad",
+    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem architecto nobis quasi explicabo deleniti quia at"
+   },
+   {  "id":2,
+    "icono": "fa-solid fa-person-walking fa-2xl",
+    "titulo": "Pro Actividad",
+    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis itaqueasperiores rem, ut nam in impedit minus odit enim illum aliquid? Sit illum harum labore fugit ratione iste optio."
+   },
+   {  "id": 3,
+    "icono": "fa-solid fa-person-dots-from-line fa-2xl",
+    "titulo": "Adaptabilidad",
+    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. A perspiciatis, nihildolores natus iure facere officiis commodi libero nam quas aperiam aliquid autem non quo recusandae illo iste quam. Aliquam!"
+   },
+   {  "id": 4,
+    "icono": "fa-regular fa-clock fa-2xl",
+    "titulo": "Responsabilidad",
+    "descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quod soluta voluptate voluptatem dolorum minus error, atque repellendus enim libero, nostrum molestiae perspiciatis non sit debitis ut. Laboriosam, voluptas dolore."
+   }
+   ]
+
+}

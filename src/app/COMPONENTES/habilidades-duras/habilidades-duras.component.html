@@ -1,34 +1,24 @@
-  <!--Habilidadesduras-->
-   
-  <section id="Habilidades duras" class="Habilidades duras">
-    <h1 class="text-center mt-0">Habilidades Duras</h1>
-    <hr class="divider" />
-    <div class="container"></div>
-   
-    <div class="progress-circle-container">
+<!--Habilidadesduras-->
+
+<section id="Habilidades duras" class="Habilidades duras">
+  <h1 class="text-center mt-0">Habilidades Duras</h1>
+  <hr class="divider" />
+  <div class="container"></div>
+
+  <div class="progress-circle-container">
     <div class="row">
-      <div class="col-md-3">
-    <h4>HTML5</h4> <div class="progress-circle progress-50">
-      <span>50</span>
-    </div>
+      <div class="col-md-3" *ngFor="let habilidad of habilidadesduras">
+        <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-12"></i>
+        <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-11"></i>
+
+        <app-modal-habilidadesduras></app-modal-habilidadesduras>
+        <h4>{{habilidad.habilidad}}</h4>
+        <div class={{habilidad.progreso}}>
+          <span>{{habilidad.porcentaje}}</span>
+        </div>
       </div>
-    <div class="col-md-3">
-    <h4>CSS3</h4>
-     <div class="progress-circle progress-35"><span>35</span>
-    </div>  
     </div>
-    <div class="col-md-3">
-    <h4>JAVASCRIPT</h4> 
-    <div class="progress-circle progress-3"><span>3</span>
-    </div>
-    </div>  
-    <div class="col-md-3">
-    <h4>PHOTOSHOP</h4> 
-    <div class="progress-circle progress-40"><span>40</span>
-    </div>
-    </div>  
-    </div>
-    </div>
+  </div>
 </section>
 <!--fin habilidades duras-->
-<br> <br> <br> <br>
+<br> <br> <br> <br><br> <br> <br> <br>

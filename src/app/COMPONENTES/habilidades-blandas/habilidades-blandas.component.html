@@ -1,48 +1,26 @@
 <!--habilidades blandas-->
 <section id="habilidades blandas" class="habilidades blandas">
-    <div class="container px-4 px-lg-5">
-      <h1 class="text-center mt-0">Habilidades Blandas</h1>
-      <hr class="divider" />
-      <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                  <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                  <i class="fa-regular fa-lightbulb fa-2xl"></i>
-                  <br><br>
-                  <h3 class="h4 mb-2">Creatividad</h3>
-                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem architecto nobis quasi explicabo deleniti quia at</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                  <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                  <i class="fa-solid fa-person-walking fa-2xl"></i>
-                  <br><br>
-                  <h3 class="h4 mb-2">Pro Actividad</h3>
-                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis itaque asperiores rem, ut nam in impedit minus odit enim illum aliquid? Sit illum harum labore fugit ratione iste optio.</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                  <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                  <i class="fa-solid fa-person-dots-from-line fa-2xl"></i>
-                  <br><br>
-                  <h3 class="h4 mb-2">Adaptabilidad</h3>
-                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perspiciatis, nihil dolores natus iure facere officiis commodi libero nam quas aperiam aliquid autem non quo recusandae illo iste quam. Aliquam!</p>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                  <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                  <i class="fa-regular fa-clock fa-2xl"></i>
-                  <br><br>
-                  <h3 class="h4 mb-2">Responsabilidad</h3>
-                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quod soluta voluptate voluptatem dolorum minus error, atque repellendus enim libero, nostrum molestiae perspiciatis non sit debitis ut. Laboriosam, voluptas dolore.</p>
-              </div>
-          </div>
+  <div class="container px-4 px-lg-5">
+    <h1 class="text-center mt-0">Habilidades Blandas</h1>
+    <hr class="divider"/>
+    <div class="row gx-4 gx-lg-5">
+      <div class="col-lg-3 col-md-6 text-center" *ngFor="let habilidadb of habilidadesblandas" >
+        <div class="mt-5">
+          <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-16"></i>
+          <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-15"></i>
+
+          <app-modal-habiliidadesblandas></app-modal-habiliidadesblandas>
+          <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+          <i class={{habilidadb.icono}}></i>
+          <br><br>
+          <h3 class="h4 mb-2">{{habilidadb.titulo}}</h3>
+          <p class="text-muted mb-0">{{habilidadb.descripcion}}</p>
+        </div>
       </div>
+    </div>
   </div>
-  <!--fin habilidades blandas-->
-  </section>
-   
-   <br> <br> <br> <br>
+</section>
+<!--fin habilidades blandas-->
+
+
+<br> <br> <br> <br>

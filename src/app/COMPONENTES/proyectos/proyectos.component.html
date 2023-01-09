@@ -1,8 +1,17 @@
 <!--proyectos-->
 <section id="proyectos" class="proyectos">
-    <h1 class="text-center mt-0">Proyectos</h1>
-  <hr class="divider" />
-  <img src="./assets/imagenes/imagen 2.webp" height="900">
-   </section>
-<!--fin de proyectos-->
+  <h1 class="text-center mt-0">Proyectos</h1>
+  <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-20"></i>
+  <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-19"></i>
 
+  <hr class="divider" />
+
+
+  <app-modal-proyectos></app-modal-proyectos>
+  <img src="{{imagenproyecto}}" height="800">
+</section>
+<div class="boton volver">
+  <a href="#top"><button type="submit" class="btn btn-close-black"><i
+        class="fa-solid fa-arrow-turn-up fa-xl"></i></button></a>
+  <h6>Volver</h6>
+</div>

@@ -5,7 +5,10 @@
   }
   .nombre{
   padding-left: 10%;
+  font-family:'Times New Roman', Times, serif;
   }
+
+
   .blockabout {
     padding: 10px;
     background: transparent;
@@ -25,4 +28,15 @@
       position: absolute;
       right: 90px;
   }
+  .fa-solid.fa-pencil.fa-xl{
+    margin-left: 20%;
+    padding: 5%;
+  }
   
+  .rounded-circle.w-75{
+    box-shadow:0 0 10px rgba(0, 0, 0, 1);
+  }
+
+  #sobremi{
+    background-color: rgb(247, 247, 255);
+     }

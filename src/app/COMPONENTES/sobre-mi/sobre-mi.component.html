@@ -1,33 +1,40 @@
 <!--sobre mi-->
-<section id="about-section" class="pt-5 pb-5">
-    <div class="container wrapabout">
-        <div class="red"></div>
-        <div class="row">
-          <div class="col-lg-4 mt-5 mt-lg-0">
-            <figure class="potoaboutwrap">
-              <img src="./assets/imagenes/foto de perfil.jpg"class="rounded-circle w-75" alt="..." title="...">
-              <br>
-              <h3 class="nombre">Ignacio Maiorino</h3>
-            </figure>
-        </div>
-        <div class="col-lg-2"></div>
-            <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
-                <div class="blockabout">
-                    <div class="blockabout-inner text-center text-sm-start">
-                        <div class="title-big pb-3 mb-3">
-                            <h3>Sobre Mí</h3>
-                        </div>
-                        <p class="description-p text-muted pe-0 pe-lg-0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere sequi, quia, est sed dicta aliquid quidem facilis culpa iure perferendis? Dolor ad quia deserunt.
-                        </p>
-                        <p class="description-p text-muted pe-0 pe-lg-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.</p>
-                    </div>
-                </div>
+<section id="sobremi" class="pt-5 pb-5">
+  <div class="container wrapabout">
+    <div class="red"></div>
+    <div class="row">
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <figure class="potoaboutwrap">
+          <img src="{{imagenperfil}}" class="rounded-circle w-75" alt="..." title="...">
+          <br><br>
+          <h3 class="nombre">{{nombre}} {{apellido}}</h3>
+        </figure>
+        <!-- Button trigger modal -->
+        <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-3"></i>
+        <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-2"></i>
+
+        <app-modal-fotoperfil></app-modal-fotoperfil>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+        <div class="blockabout">
+          <div class="blockabout-inner text-center text-sm-start">
+            <div class="title-big pb-3 mb-3">
+              <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-4"></i>
+              <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-3"></i>
+              <app-modal-sobremi></app-modal-sobremi>
+
+              <h3><b>{{titulo}}</b></h3> <br>
+              <h3>{{subtitulo}}</h3>
             </div>
-           </div>
+            <p class="description-p text-muted pe-0 pe-lg-0">
+             {{descripcion}}</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-  <!--fin sobre mi-->
-      
-     
-  <br> <br> <br> <br> <br> <br><br> <br> 
+  </div>
+</section>
+<!--fin sobre mi-->
+
+<div class="br sobremi"> <br> <br> <br> <br> <br> </div>

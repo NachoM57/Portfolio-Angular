@@ -1,36 +1,29 @@
- <!--Educacion-->
- <section id="educacion" class="educacion">
-    <div class="col-6">
-      <h1 class="text-center mt-0"> Educacion</h1>
-      <hr class="divider" />
-      <div class="container mt-5 mb-5">
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-           
-            <ul class="timeline">
-             
-              <li>
-                <h3>Primario y Secundario</h3> 
-                <p>Colegio Nuestra Señora Del Huerto 2009 - 2015.
-                   Bachiller con orientación en Ciencias
-                  Sociales y Humanidades.</p>
+<!--Educacion-->
+<section id="educacion" class="educacion">
+  <div class="col-12">
+    <h1 class="text-center mt-0"> Educacion</h1>
+    <hr class="divider" />
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3"*ngFor="let educacion of educaciones" >
+
+          <ul class="timeline">
+
+            <li>
+              <h3>{{educacion.estudio}}</h3>
+              <p>{{educacion.lugar}} {{educacion.inicio}} - {{educacion.fin}}
+                {{educacion.descripcion}}</p>
+              <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-9"></i>
+              <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-8"></i>
+
+              <app-modal-educacion></app-modal-educacion>
+
               </li>
-              
-              <li>
-                <h3>Curso Argentina Programa, "Se Programar"</h3>
-                 <p>2022</p>
-               </li>
-              
-              <li>
-               <h3>Curso Arbitraje Criptomonedas</h3>
-                <p>2021 - 2022</p>
-              </li>
-            
-            </ul>
-          </div>
+           </ul>
         </div>
       </div>
     </div>
-    </section>
-    <!--fin educacion-->
-    <br> <br> <br> <br> <br> <br>
+  </div>
+</section>
+<!--fin educacion-->
+<br> <br> <br> <br>

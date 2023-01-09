@@ -1,0 +1,16 @@
+.modal-header {
+    background-color:#888888;
+}
+.modal-body {
+    background-color:  #eae7e4;
+}
+.modal-footer {
+    background-color:  #eae7e4 !important;
+}
+.error{
+    color: rgb(228, 24, 24);
+  }
+  
+  .border-danger{
+    border-color: rgb(31, 10, 224)!important;
+  }
