@@ -11,6 +11,10 @@ export class ProyectosComponent implements OnInit {
 
 //inicializar variables de instancia
 imagenproyecto: string='';
+tituloproyecto: string='';
+descripcionproyecto: string='';
+inicioproyecto: string='';
+finproyecto: string='';
 
  constructor(//inyectar el servicio para tener acceso en la clase de los metodos
   private portfolioService: PortfolioService, public router: Router) {}
@@ -21,8 +25,10 @@ ngOnInit(): void  {
     console.log(portfolio);
    //definir informacion a mostrar;
    this.imagenproyecto=portfolio.imagenproyecto;
-  
-
+   this.tituloproyecto=portfolio.tituloproyecto;
+   this.descripcionproyecto=portfolio.descripcionproyecto;
+   this.inicioproyecto=portfolio.inicioproyecto;
+   this.finproyecto=portfolio.finproyecto;
   })
  
 }

@@ -7,6 +7,10 @@
     "subtitulo": "Sobre mi",
     "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere sequi, quia, est sed dicta aliquid quidem facilis culpa iure perferendis? Dolor ad quia deserunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.",
     "imagenproyecto": "../assets/imagenes/imagen 2.webp",
+    "tituloproyecto": "titulo del proyecto argentina programa",
+    "descripcionproyecto": " descripcion del proyecto argentina programa",
+    "inicioproyecto": "2022",
+    "finproyecto": "2023",
 
      "experiencias": 
 [

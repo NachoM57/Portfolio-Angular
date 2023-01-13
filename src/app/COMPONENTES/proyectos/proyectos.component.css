@@ -3,6 +3,8 @@
     padding: 1%;
   }
 .boton.volver{
-  margin-left: 90%;
-
+ margin-left: 95%;
 }
+.boton.volver:hover{
+ color: rgb(10, 10, 161);
+ }
