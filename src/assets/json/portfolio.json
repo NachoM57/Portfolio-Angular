@@ -78,7 +78,7 @@
    "progreso": "progress-circle progress-20"
   },
   {  "id": 4,
-   "habilidad": "PHOTOSHOP",
+   "habilidad": "MYSQL",
    "porcentaje": "30",
    "progreso": "progress-circle progress-30"
   },
@@ -91,7 +91,13 @@
  "habilidad": "ANGULAR",
  "porcentaje": "55",
  "progreso": "progress-circle progress-55"
+},
+{  "id": 7,
+"habilidad": "GIT-HUB",
+"porcentaje": "50",
+"progreso": "progress-circle progress-50"
 }
+
   ],
 
   "habilidadesblandas": 

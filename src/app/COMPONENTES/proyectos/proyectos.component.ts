@@ -33,6 +33,18 @@ ngOnInit(): void  {
  
 }
 
+//codigo para volver arriba
+scrolltoElement(selector:any){
+const element=
+document.querySelector(selector)
+element ?
+element.scrollIntoView({behavior:"smooth"}):null;
+
+}
+
+
+
+
 }
 
 
