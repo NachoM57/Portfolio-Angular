@@ -1,26 +1,29 @@
 <!--habilidades blandas-->
-<section id="habilidades blandas" class="habilidades blandas">
-  <div class="container px-4 px-lg-5">
-    <h1 class="text-center mt-0">Habilidades Blandas</h1>
-    <hr class="divider"/>
-    <div class="row gx-4 gx-lg-5">
-      <div class="col-lg-3 col-md-6 text-center" *ngFor="let habilidadb of habilidadesblandas" >
-        <div class="mt-5">
-          <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-16"></i>
-          <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-15"></i>
-
-          <app-modal-habiliidadesblandas></app-modal-habiliidadesblandas>
-          <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-          <i class={{habilidadb.icono}}></i>
-          <br><br>
-          <h3 class="h4 mb-2">{{habilidadb.titulo}}</h3>
-          <p class="text-muted mb-0">{{habilidadb.descripcion}}</p>
-        </div>
+<h1 class="text-center mt-0">Habilidades Blandas</h1>
+<hr class="divider"/>
+<section class="feature-section py-5">   
+  <div class="container"></div>
+      <div class="row">
+         <div class="col-lg-5 mb-5"*ngFor="let habilidad of habilidadesblandas">
+              <div class="feature-item d-flex align-items-center">
+                  <div class="left-img-sec h-100">
+                    <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"></i>
+                    <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-12"></i>
+                    <app-modal-habiliidadesblandas></app-modal-habiliidadesblandas>
+                      <img src="{{habilidad.imagen}}" alt="">
+                  </div>
+                  <div class="left-test-sec h-auto">
+                      <h4>{{habilidad.titulo}}</h4>
+                      <p>{{habilidad.descripcion}}</p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-  </div>
 </section>
 <!--fin habilidades blandas-->
 
 
 <br> <br> <br> <br>
+
+
+

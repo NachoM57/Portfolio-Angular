@@ -11,6 +11,7 @@ export class HabilidadesBlandasComponent implements OnInit {
 
   //inicializar variables de instancia
 habilidadesblandas: any=[]
+
  
   constructor(//inyectar el servicio para tener acceso en la clase de los metodos
    private portfolioService: PortfolioService, public router: Router) {}

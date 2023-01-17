@@ -29,6 +29,8 @@ import { ModalHabilidadesdurasComponent } from './COMPONENTES/modales/modal-habi
 import { ModalHabiliidadesblandasComponent } from './COMPONENTES/modales/modal-habiliidadesblandas/modal-habiliidadesblandas.component';
 import { ModalProyectosComponent } from './COMPONENTES/modales/modal-proyectos/modal-proyectos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './COMPONENTES/footer/footer.component';
+
 
 
 @NgModule({
@@ -57,6 +59,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ModalHabilidadesdurasComponent,
     ModalHabiliidadesblandasComponent,
     ModalProyectosComponent,
+    FooterComponent,
     ],
   imports: [
     BrowserModule,

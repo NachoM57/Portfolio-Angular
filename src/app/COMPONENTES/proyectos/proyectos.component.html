@@ -1,20 +1,29 @@
 <!--proyectos-->
-<section id="proyectos" class="proyectos">
-  <h1 class="text-center mt-0">Proyectos</h1>
-  <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-20"></i>
-  <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-19"></i>
-
-  <hr class="divider" />
-
-
-  <app-modal-proyectos></app-modal-proyectos>
-  <img src="{{imagenproyecto}}" height="350">
-  <h2>{{tituloproyecto}}</h2>
-  <p>{{descripcionproyecto}} {{inicioproyecto}} {{finproyecto}}</p>
+<h1 class="text-center mt-0">Proyectos</h1>
+<hr class="divider"/>
+<section class="feature-section py-5">   
+  <div class="container"></div>
+      <div class="row">
+         <div class="col-lg-12 mb-12">
+              <div class="feature-item d-flex align-items-center">
+                  <div class="left-img-sec h-100">
+                    <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"></i>
+                    <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-12"></i>
+                    <app-modal-proyectos></app-modal-proyectos>
+                      <img src="{{imagenproyecto}}" alt="">
+                  </div>
+                  <div class="left-test-sec h-auto">
+                      <h4>{{tituloproyecto}}</h4>
+                      <p>{{descripcionproyecto}}</p>
+                      <p>{{inicioproyecto}} - {{finproyecto}}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
 </section>
 <div   *ngIf="this.router.url ==='/index'" class ="frame">
-    <button (click)="scrolltoElement('app-barra-navegacion')" class="custom-btn btn-7"><span>Volver       <i class="fa-solid fa-arrow-up"></i></span></button>
+    <button (click)="scrolltoElement('app-barra-navegacion')" class="custom-btn btn-7"><span>Volver<i class="fa-solid fa-arrow-up"></i></span></button>
   </div>
   <div  *ngIf="this.router.url ==='/admin'" class ="frame">
-    <button (click)="scrolltoElement('app-barra-navegacion-adminhtml')" class="custom-btn btn-7"><span>Volver       <i class="fa-solid fa-arrow-up"></i></span></button>
+    <button (click)="scrolltoElement('app-barra-navegacion-adminhtml')" class="custom-btn btn-7"><span>Volver<i class="fa-solid fa-arrow-up"></i></span></button>
   </div>

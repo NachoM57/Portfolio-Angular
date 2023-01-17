@@ -8,14 +8,12 @@
       <div class="row">
         <div class="col-md-6 offset-md-3"*ngFor="let experiencia of experiencias" >
           <ul class="timeline">
-
+            <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-5"></i>
+            <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-4"></i>
+            <app-modal-experiencialaboral></app-modal-experiencialaboral>
             <li>
               <h3>{{experiencia.puesto}}</h3>
               <p>{{experiencia.lugar}}, {{experiencia.inicio}} - {{experiencia.fin}} </p>
-              <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-5"></i>
-              <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-4"></i>
-
-              <app-modal-experiencialaboral></app-modal-experiencialaboral>
             </li>
           </ul>
        </div>

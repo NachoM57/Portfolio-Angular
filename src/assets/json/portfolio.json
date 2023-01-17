@@ -7,10 +7,15 @@
     "subtitulo": "Sobre mi",
     "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere sequi, quia, est sed dicta aliquid quidem facilis culpa iure perferendis? Dolor ad quia deserunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.",
     "imagenproyecto": "../assets/imagenes/imagen 2.webp",
-    "tituloproyecto": "titulo del proyecto argentina programa",
-    "descripcionproyecto": " descripcion del proyecto argentina programa",
-    "inicioproyecto": "2022",
-    "finproyecto": "2023",
+    "tituloproyecto": "Portfolio-Argentina Programa #YoProgramo",
+    "descripcionproyecto": "Proyecto final realizado durante el curso de Desarrollo Web Full Stack Jr Argentina Programa. Utilizando herramientas como HTML, CSS, ANGULAR, BOOSTRAP, JAVA y SPRING BOOT",
+    "inicioproyecto": "18 Octubre 2022",
+    "finproyecto": "15 Mayo 2023",
+    "titulofooter": "Contacto",
+    "nombrefooter": "Ignacio Maiorino",
+    "localidadfooter": "Bell Ville, Cordoba",
+    "gmailfooter": "ignaciomaiorino50@gmail.com",
+
 
      "experiencias": 
 [
@@ -32,31 +37,31 @@
 [
    {  "id": 1,
     "estudio": "Primario y Secundario",
-    "lugar": "Colegio Nuestra Señora Del Huerto",
+    "lugar": "Colegio Nuestra Señora Del Huerto,",
     "inicio": "2003",
     "fin": "2015",
     "descripcion": "Bachiller con orientación en Ciencias Sociales y Humanidades."
     },
    {  "id": 2,
-    "estudio": "Curso Argentina Programa, Se Programar",
+    "estudio": "Argentina Programa",
     "lugar": "",
     "inicio": "2022",
     "fin": "",
-    "descripcion": ""
+    "descripcion": "#SeProgramar"
    },
    {  "id": 3,
-    "estudio": "Curso Arbitraje Criptomonedas",
+    "estudio": "Arbitraje de Criptomonedas",
     "lugar": "",
     "inicio": "2021",
     "fin": "2022",
     "descripcion": ""
   },
   {  "id": 4,
-    "estudio": "Curso Argentina Programa, Yo Programo",
+    "estudio": "Argentina Programa 2.0",
     "lugar": "",
     "inicio": "2022",
     "fin": "2023",
-    "descripcion": ""
+    "descripcion": "#YoProgramo, programador Full Stack Jr"
   }
  ],
 
@@ -103,24 +108,24 @@
   "habilidadesblandas": 
   [
    {  "id": 1,
-    "icono": "fa-regular fa-lightbulb fa-2xl",
+    "imagen": "https://i.ibb.co/WFk1jFb/022.jpg",
     "titulo": "Creatividad",
-    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem architecto nobis quasi explicabo deleniti quia at"
+    "descripcion":"La creatividad es una de las capacidades mas importantes que tiene todo ser humano porque le permite hacer contacto con una parte interior que le ayuda al desarrollo de la intuición, la imaginación, la iniciativa y la percepción, así como en la creación de nuevas ideas o soluciones innovadoras"
    },
    {  "id":2,
-    "icono": "fa-solid fa-person-walking fa-2xl",
+    "imagen": "../assets/imagenes/proactividad.jpg",
     "titulo": "Pro Actividad",
-    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis itaqueasperiores rem, ut nam in impedit minus odit enim illum aliquid? Sit illum harum labore fugit ratione iste optio."
+    "descripcion":"La persona proactiva logra un desempeño por arriba del promedio. Otra forma en que las personas proactivas se desempeñan mejor es siendo innovadoras. Explorar el ambiente en busca de oportunidades para proporcionar nuevas formar de mejorar procesos de negocio."
    },
    {  "id": 3,
-    "icono": "fa-solid fa-person-dots-from-line fa-2xl",
+    "imagen": "https://i.ibb.co/37jVH8t/mbr-13.jpg",
     "titulo": "Adaptabilidad",
-    "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. A perspiciatis, nihildolores natus iure facere officiis commodi libero nam quas aperiam aliquid autem non quo recusandae illo iste quam. Aliquam!"
+    "descripcion":"La adaptabilidad permite adoptar mentalidades más flexibles, especialmente, aplicables a momentos de mayor presión, y fomenta el autocuidado constante necesario para hacer frente a un entorno cambiante."
    },
    {  "id": 4,
-    "icono": "fa-regular fa-clock fa-2xl",
+    "imagen": "../assets/imagenes/responsabilidad.webp",
     "titulo": "Responsabilidad",
-    "descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quod soluta voluptate voluptatem dolorum minus error, atque repellendus enim libero, nostrum molestiae perspiciatis non sit debitis ut. Laboriosam, voluptas dolore."
+    "descripcion":"Una persona se caracteriza por su responsabilidad porque tiene la virtud no solo de tomar una serie de decisiones de manera consciente, sino también de asumir las consecuencias que tengan las citadas decisiones y de responder de las mismas ante quien corresponda en cada momento."
    }
    ]
 

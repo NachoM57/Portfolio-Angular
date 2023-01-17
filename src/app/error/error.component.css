@@ -11,12 +11,12 @@
   -webkit-text-size-adjust: none;
 }
 
-.container {
+html, body {
   height: 100%;
   overflow: hidden;
 }
 
-.container {
+body {
   padding: 0;
   margin: 0;
   background: #181828;
@@ -34,7 +34,7 @@ a {
   vertical-align: baseline;
   background: transparent;
   text-decoration: none;
-  color: #000 !important;
+  color: #000;
 }
 
 input, select, button, textarea {
@@ -192,7 +192,7 @@ button {
 
 .error__message {
   text-align: center;
-  color: #f2f2f8;
+  color: #181828;
 }
 
 .message__title {
@@ -228,7 +228,7 @@ button {
   width: 170px;
   display: inline-block;
   vertical-align: top;
-  border: 1px solid #212121 !important;
+  border: 1px solid #212121;
   padding-left: 10px;
   padding-right: 46px;
 }
@@ -239,7 +239,7 @@ button {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #212121 !important;
+  color: #212121;
   -webkit-transition: color .25s ease;
   transition: color .25s ease;
 }
@@ -252,7 +252,7 @@ button {
   vertical-align: top;
   margin: 0 15px;
   border: 1px solid #181828;
-  color: #181828 !important;
+  color: #181828;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -265,7 +265,7 @@ button {
 .e-nav__link:before {
   content: '';
   height: 200px;
-  background: #212121 !important;
+  background: #212121;
   position: absolute;
   top: 70px;
   right: 70px;
@@ -482,7 +482,7 @@ button {
   }
 }
 @media (max-width: 750px) {
-  .container {
+  .body, .html {
     max-height: 100vh;
   }
    .error__content {
