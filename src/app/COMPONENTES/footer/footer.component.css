@@ -12,7 +12,7 @@ footer{
   margin-bottom: 50px;
   margin-left: 100px;
   margin-right: 100px;
-  background: #dcdbff;
+  background: rgb(186, 185, 252);
   border-style:groove;
 }
 h1{
@@ -37,7 +37,7 @@ figcaption{
   color: white;
 }
 .col-sm-6.text-right{
-  padding-left: 43%;
+  padding-left: 40%;
 }
 
 .fa.fa-facebook.fa-fw{
@@ -50,6 +50,11 @@ figcaption{
   color:#84147a;
 }
 
+.fa.fa-github.fa-fw{
+  font-size:32px; 
+  color:#2c2c2c;
+}
+
 .fa.fa-facebook.fa-fw:hover{
   font-size: 32px; 
   color:#0b58ff;
@@ -57,4 +62,8 @@ figcaption{
 .fa.fa-instagram.fa-fw:hover{
   font-size:32px; 
   color:#ff2bed;
+}
+.fa.fa-github.fa-fw:hover{
+  font-size:32px; 
+  color:#858585;
 }

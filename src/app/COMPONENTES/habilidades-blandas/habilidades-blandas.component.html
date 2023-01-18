@@ -4,7 +4,7 @@
 <section class="feature-section py-5">   
   <div class="container"></div>
       <div class="row">
-         <div class="col-lg-5 mb-5"*ngFor="let habilidad of habilidadesblandas">
+         <div class="col-lg-4 mb-4"*ngFor="let habilidad of habilidadesblandas">
               <div class="feature-item d-flex align-items-center">
                   <div class="left-img-sec h-100">
                     <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"></i>
@@ -14,7 +14,6 @@
                   </div>
                   <div class="left-test-sec h-auto">
                       <h4>{{habilidad.titulo}}</h4>
-                      <p>{{habilidad.descripcion}}</p>
                   </div>
               </div>
           </div>
@@ -23,7 +22,7 @@
 <!--fin habilidades blandas-->
 
 
-<br> <br> <br> <br>
+<br> <br> <br> 
 
 
 

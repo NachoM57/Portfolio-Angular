@@ -3,6 +3,7 @@
 ul.timeline {
   list-style-type: none;
   position: relative;
+  margin-left: 18%;
 }
 ul.timeline:before {
   content: ' ';

@@ -12,9 +12,9 @@
     "inicioproyecto": "18 Octubre 2022",
     "finproyecto": "15 Mayo 2023",
     "titulofooter": "Contacto",
-    "nombrefooter": "Ignacio Maiorino",
-    "localidadfooter": "Bell Ville, Cordoba",
-    "gmailfooter": "ignaciomaiorino50@gmail.com",
+    "redunofooter": "https://www.facebook.com/nacho.maiorino",
+    "reddosfooter": "https://www.instagram.com/nachomaiorino/",
+    "redtresfooter": "https://github.com/NachoM57",
 
 
      "experiencias": 
@@ -109,24 +109,28 @@
   [
    {  "id": 1,
     "imagen": "https://i.ibb.co/WFk1jFb/022.jpg",
-    "titulo": "Creatividad",
-    "descripcion":"La creatividad es una de las capacidades mas importantes que tiene todo ser humano porque le permite hacer contacto con una parte interior que le ayuda al desarrollo de la intuición, la imaginación, la iniciativa y la percepción, así como en la creación de nuevas ideas o soluciones innovadoras"
+    "titulo": "Creatividad"
    },
    {  "id":2,
     "imagen": "../assets/imagenes/proactividad.jpg",
-    "titulo": "Pro Actividad",
-    "descripcion":"La persona proactiva logra un desempeño por arriba del promedio. Otra forma en que las personas proactivas se desempeñan mejor es siendo innovadoras. Explorar el ambiente en busca de oportunidades para proporcionar nuevas formar de mejorar procesos de negocio."
+    "titulo": "Pro Actividad"
    },
    {  "id": 3,
     "imagen": "https://i.ibb.co/37jVH8t/mbr-13.jpg",
-    "titulo": "Adaptabilidad",
-    "descripcion":"La adaptabilidad permite adoptar mentalidades más flexibles, especialmente, aplicables a momentos de mayor presión, y fomenta el autocuidado constante necesario para hacer frente a un entorno cambiante."
+    "titulo": "Adaptabilidad"
    },
    {  "id": 4,
     "imagen": "../assets/imagenes/responsabilidad.webp",
-    "titulo": "Responsabilidad",
-    "descripcion":"Una persona se caracteriza por su responsabilidad porque tiene la virtud no solo de tomar una serie de decisiones de manera consciente, sino también de asumir las consecuencias que tengan las citadas decisiones y de responder de las mismas ante quien corresponda en cada momento."
-   }
+    "titulo": "Responsabilidad"
+   },
+   {  "id": 5,
+   "imagen": "../assets/imagenes/productividad.webp",
+   "titulo": "Productividad Personal"
+  },
+  {  "id": 6,
+  "imagen": "../assets/imagenes/colaboracion.jpg",
+  "titulo": "Colaboracion"
+ }
    ]
 
 }
