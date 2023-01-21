@@ -3,6 +3,31 @@
   padding: 1%;
 
 }
-#banner{
-  background-color: rgb(240, 240, 255); ;
+
+#banner {
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
 }
+.container.d-flex.flex-column.align-items-center {
+margin-top: 5%;
+margin-left: 13%;
+margin-bottom: 34%;
+}
+
+.btn.btn-secondary.btn-lg.rounded-2 {
+  border: #5a656e ;
+  margin-top: -8%;
+  margin-left: 100%;
+  background-color: #ffe7d2;
+  color: #414141;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  border-radius: 2%;
+  }
+
+  h2{
+    font-family:cursive;
+    color:#d8ecff;
+    margin-left: 33%;
+  }

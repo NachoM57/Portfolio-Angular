@@ -1,5 +1,4 @@
 {
-    "banner": "../assets/imagenes/imagen 4.webp",
     "imagenperfil": "../assets/imagenes/foto de perfil.jpg",
     "nombre": "Ignacio",
     "apellido": "Maiorino",
@@ -15,7 +14,9 @@
     "redunofooter": "https://www.facebook.com/nacho.maiorino",
     "reddosfooter": "https://www.instagram.com/nachomaiorino/",
     "redtresfooter": "https://github.com/NachoM57",
-
+    "banner": "https://res.cloudinary.com/ddqhcwp8j/image/upload/v1465835110/cup-of-coffee-1280537_1920_inrevw.jpg",
+    "titulobanner": "Desarrolador Web Full Stack Jr",
+    
 
      "experiencias": 
 [

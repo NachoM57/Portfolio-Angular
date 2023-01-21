@@ -11,7 +11,7 @@ export class BannerComponent implements OnInit {
 
 //inicializar variables de instancia
 banner: string='';
-
+titulobanner: string='';
  constructor(//inyectar el servicio para tener acceso en la clase de los metodos
   private portfolioService: PortfolioService, public router: Router) {}
 
@@ -21,10 +21,19 @@ ngOnInit(): void  {
     console.log(portfolio);
    //definir informacion a mostrar;
    this.banner=portfolio.banner;
-  
-
-  })
+   this.titulobanner=portfolio.titulobanner;
+   })
  
 }
+//ts para scroll del botón al footer
+scrollToElement(selector:any) {
+  const element = document.querySelector(selector)
+  element ? element.scrollIntoView({behavior: "smooth"}): null;
+
+
+  
+}
+
+
 
 }
