@@ -12,6 +12,8 @@ export class BannerComponent implements OnInit {
 //inicializar variables de instancia
 banner: string='';
 titulobanner: string='';
+nombrebanner: string='';
+
  constructor(//inyectar el servicio para tener acceso en la clase de los metodos
   private portfolioService: PortfolioService, public router: Router) {}
 
@@ -22,6 +24,7 @@ ngOnInit(): void  {
    //definir informacion a mostrar;
    this.banner=portfolio.banner;
    this.titulobanner=portfolio.titulobanner;
+   this.nombrebanner=portfolio.nombrebanner;
    })
  
 }

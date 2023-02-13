@@ -6,8 +6,7 @@
       <div class="col-lg-4 mt-5 mt-lg-0">
         <figure class="potoaboutwrap">
           <img src="{{imagenperfil}}" class="rounded-circle w-75" alt="..." title="...">
-          <br><br>
-          <h3 class="nombre">{{nombre}} {{apellido}}</h3>
+          <h4>{{nombre}} {{apellido}}</h4>
         </figure>
         <!-- Button trigger modal -->
         <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-3"></i>
@@ -25,7 +24,7 @@
               <app-modal-sobremi></app-modal-sobremi>
 
              <div class="titulo"><h3>{{titulo}}</h3></div> <br>
-              <h4>{{subtitulo}}</h4>
+              <h3>{{subtitulo}}</h3>
             </div>
             <p class="description-p text-muted pe-0 pe-lg-0">
              {{descripcion}}</p>

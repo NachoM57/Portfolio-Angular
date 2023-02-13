@@ -1,8 +1,8 @@
 {
     "imagenperfil": "../assets/imagenes/foto de perfil.jpg",
+    "titulo": "Desarrolador Web Full Stack Jr",
     "nombre": "Ignacio",
     "apellido": "Maiorino",
-    "titulo": "Desarrolador Web Full Stack Jr",
     "subtitulo": "Sobre mi",
     "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere sequi, quia, est sed dicta aliquid quidem facilis culpa iure perferendis? Dolor ad quia deserunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.",
     "imagenproyecto": "../assets/imagenes/imagen 2.webp",
@@ -15,7 +15,8 @@
     "reddosfooter": "https://www.instagram.com/nachomaiorino/",
     "redtresfooter": "https://github.com/NachoM57",
     "banner": "https://res.cloudinary.com/ddqhcwp8j/image/upload/v1465835110/cup-of-coffee-1280537_1920_inrevw.jpg",
-    "titulobanner": "Desarrolador Web Full Stack Jr",
+    "titulobanner": "< Desarrolador Web />",
+    "nombrebanner": "Ignacio Maiorino",
     
 
      "experiencias": 
@@ -79,7 +80,7 @@
    "progreso": "progress-circle progress-40"
   },
   {  "id": 3,
-   "habilidad": "JAVASCRIPT",
+   "habilidad": "JAVA",
    "porcentaje": "20",
    "progreso": "progress-circle progress-20"
   },

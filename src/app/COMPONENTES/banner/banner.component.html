@@ -1,19 +1,19 @@
 <!--Banner-->
   
-<section id="banner"  >
+<section id="banner">
   <div  class="d-flex align-items-center" [style.backgroundImage]="'url(' + banner + ')'" [style.backgroundSize]="'cover'">
-    <div class="container d-flex flex-column align-items-center">
-      <h2>{{titulobanner}}</h2>
-      <button type="button" class="btn btn-secondary btn-lg rounded-2"> <a (click)="scrollToElement('#footer')"> Contactame! </a> </button>
-      <br>
-
-
- <!-- Button trigger modal -->
-    <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-2"></i>
-    <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-1"></i>
-    <app-modal-banner></app-modal-banner>
-  </div>
-  </div>
+    <div class="col-7">
+      <h1>{{nombrebanner}}</h1>
+      <h3>{{titulobanner}}</h3>
+      </div>
+    </div>
+       <!-- Button trigger modal -->
+      <div class="edicion">
+        <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-2"></i>
+           <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-1"></i>
+           <app-modal-banner></app-modal-banner>
+         </div>
+ 
 </section>
 
 <!--fin de banner-->

@@ -1,33 +1,34 @@
-.fa-solid.fa-pencil.fa-xl{
-  margin-left: 5%;
-  padding: 1%;
-
-}
 
 #banner {
   width: 100%;
   height: 100%;
   margin-top: 0%;
 }
-.container.d-flex.flex-column.align-items-center {
-margin-top: 5%;
-margin-left: 13%;
-margin-bottom: 34%;
-}
 
-.btn.btn-secondary.btn-lg.rounded-2 {
-  border: #5a656e ;
-  margin-top: -8%;
-  margin-left: 100%;
-  background-color: #ffe7d2;
-  color: #414141;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style: italic;
-  border-radius: 2%;
+.col-7{
+  margin-top: 10%;
+margin-left: 20%;
+margin-bottom: 30%;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#e0eaff;
+    text-align: center;
+    padding: 1%;
+    border: 2px solid;
+    color: aliceblue;
+    box-shadow: 0 0 25px black;
+    backdrop-filter: blur(3px);
+
   }
 
-  h2{
-    font-family:cursive;
-    color:#d8ecff;
-    margin-left: 33%;
+  .fa-solid.fa-pencil.fa-xl{
+    margin-left: 5%;
+    padding: 1%;
   }
+
+  h3{
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+
+

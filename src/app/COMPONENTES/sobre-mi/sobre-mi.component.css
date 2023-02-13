@@ -4,9 +4,10 @@
     position: relative;
     
   }
-  .nombre{
+  h4{
   padding-left: 15%;
   font-family:'Times New Roman', Times, serif;
+  font-style: italic;
   }
 
 
@@ -39,4 +40,5 @@
   }
   .titulo{
     background: linear-gradient(90deg,#7cebff,rgb(67, 67, 255));
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
