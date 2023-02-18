@@ -12,12 +12,12 @@ footer{
   margin-bottom: 50px;
   margin-left: 100px;
   margin-right: 100px;
-  background: rgb(226, 226, 255);
+  background: rgb(218, 218, 255);
   border-style:groove;
 }
 h1{
   text-align: center;
-  font-family: impact;
+  font-family:'Times New Roman', Times, serif;
 }
 
 figcaption{
