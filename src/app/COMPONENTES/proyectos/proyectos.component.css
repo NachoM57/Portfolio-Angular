@@ -145,3 +145,7 @@ button{
   display: flex;
   margin-right: 20%;
 }
+
+.fa-regular.fa-plus.fa-xl{
+  margin-left: 60%;
+}

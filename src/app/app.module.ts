@@ -30,6 +30,11 @@ import { ModalHabiliidadesblandasComponent } from './COMPONENTES/modales/modal-h
 import { ModalProyectosComponent } from './COMPONENTES/modales/modal-proyectos/modal-proyectos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './COMPONENTES/footer/footer.component';
+import { AgregarExperienciaComponent } from './COMPONENTES/modales/agregar-experiencia/agregar-experiencia.component';
+import { AgregarEducacionComponent } from './COMPONENTES/modales/agregar-educacion/agregar-educacion.component';
+import { AgregarHabilidadDComponent } from './COMPONENTES/modales/agregar-habilidad-d/agregar-habilidad-d.component';
+import { AgregarHabilidadBComponent } from './COMPONENTES/modales/agregar-habilidad-b/agregar-habilidad-b.component';
+import { AgregarProyectoComponent } from './COMPONENTES/modales/agregar-proyecto/agregar-proyecto.component';
 
 
 
@@ -60,6 +65,11 @@ import { FooterComponent } from './COMPONENTES/footer/footer.component';
     ModalHabiliidadesblandasComponent,
     ModalProyectosComponent,
     FooterComponent,
+    AgregarExperienciaComponent,
+    AgregarEducacionComponent,
+    AgregarHabilidadDComponent,
+    AgregarHabilidadBComponent,
+    AgregarProyectoComponent,
     ],
   imports: [
     BrowserModule,

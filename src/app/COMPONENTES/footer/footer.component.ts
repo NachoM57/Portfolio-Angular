@@ -10,9 +10,7 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class FooterComponent implements OnInit{
 //inicializar variables de instancia
 titulofooter: string='';
-redunofooter: string='';
-reddosfooter: string='';
-redtresfooter: string='';
+
 
 constructor(//inyectar el servicio para tener acceso en la clase de los metodos
 private portfolioService: PortfolioService, public router: Router) {}
@@ -23,21 +21,8 @@ private portfolioService: PortfolioService, public router: Router) {}
     console.log(portfolio);
    //definir informacion a mostrar;
    this.titulofooter=portfolio.titulofooter;
-   this.redunofooter=portfolio.redunofooter;
-   this.reddosfooter=portfolio.reddosfooter;
-   this.redtresfooter=portfolio.redtresfooter;
   })
 
 }
-//codigo para volver arriba
-scrolltoElement(selector:any){
-  const element=
-  document.querySelector(selector)
-  element ?
-  element.scrollIntoView({behavior:"smooth"}):null;
-  
-  }
-  
-
 
 }

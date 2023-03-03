@@ -3,7 +3,9 @@
   <div class="col-12">
    <h1 class="text-center mt-0">Experiencia Laboral</h1>
     <hr class="divider" />
-     <div class="container mt-5 mb-5">
+    <i class="fa-regular fa-plus fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-35"></i>
+    <app-agregar-experiencia></app-agregar-experiencia>
+    <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col-md-6 offset-md-3"*ngFor="let experiencia of experiencias" >
           <ul class="timeline">

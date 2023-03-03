@@ -3,6 +3,8 @@
   <div class="col-12">
     <h1 class="text-center mt-0"> Educacion</h1>
     <hr class="divider" />
+    <i class="fa-regular fa-plus fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-36"></i>
+    <app-agregar-educacion></app-agregar-educacion>
     <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col-md-6 offset-md-3"*ngFor="let educacion of educaciones" >

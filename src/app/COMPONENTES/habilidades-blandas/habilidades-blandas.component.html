@@ -1,15 +1,17 @@
 <!--habilidades blandas-->
 <h1 class="text-center mt-0">Habilidades Blandas</h1>
 <hr class="divider"/>
+<i class="fa-regular fa-plus fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-38"></i>
+<app-agregar-habilidad-b></app-agregar-habilidad-b>
 <section class="feature-section py-5">   
   <div class="container"></div>
       <div class="row">
          <div class="col-lg-4 mb-4"*ngFor="let habilidad of habilidadesblandas">
-              <div class="feature-item d-flex align-items-center">
+            <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"></i>
+            <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-12"></i>
+            <app-modal-habiliidadesblandas></app-modal-habiliidadesblandas>
+            <div class="feature-item d-flex align-items-center">
                   <div class="left-img-sec h-100">
-                    <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"></i>
-                    <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-12"></i>
-                    <app-modal-habiliidadesblandas></app-modal-habiliidadesblandas>
                       <img src="{{habilidad.imagen}}" alt="">
                   </div>
                   <div class="left-test-sec h-auto">

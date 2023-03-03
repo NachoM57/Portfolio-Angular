@@ -367,5 +367,7 @@ h1 {
     transform: rotate(360deg); } 
 }
 
-
+.fa-regular.fa-plus.fa-xl{
+  margin-left: 60%;
+}
 

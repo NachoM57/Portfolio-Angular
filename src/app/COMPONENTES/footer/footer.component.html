@@ -1,44 +1,36 @@
-<div id="contact" class="container-fuild">
-    <h1> {{titulofooter}} </h1>
-    
-    <form id="contact-form" method="post">
+<footer>
+    <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name">Nombre *</label>
-                    <input id="form_name" type="text" name="nombre" class="form-control" placeholder=" Por favor, introduzca su nombre  *" required="Requerida" data-error="Se requiere el nombre.">
-                </div>
-            </div>
+                <h1> {{titulofooter}} </h1>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Por favor introduzca su correo electrónico *" required="requerida">
+        <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" required />
+                        <label>Nombre</label> 
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Mensaje *</label>
-                    <textarea id="form_message" name="mensaje" class="form-control" placeholder="Por favor, ponga su mensaje aquí *" rows="4" required="requerida" ></textarea>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Email</label> 
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-primary btn-send" value="Enviar Mensaje">
-            </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required></textarea>
+                        <label>Mensaje</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="btn-lrg submit-btn">Enviar mensaje</div>
+                </div>
         </div>
-
-<footer id="footer" class="container-fuild">
-  <div class="row">
-    <div class="col-sm-6">
-  <h4> Copyright &copy 2023 <span style="font-family: Papyrus, fantasy; font-size:14pt; font-weight:bold">Structural Solutions </span></h4>
     </div>
-    <div class="col-sm-6 text-right">
-  <a href="{{redunofooter}}" target="_blank" class="button social"><i class="fa fa-facebook fa-fw"></i></a>
-  <a href="{{reddosfooter}}" target="_blank" class="button social"><i class="fa fa-instagram fa-fw"></i></a>
-  <a href="{{redtresfooter}}" target="_blank" class="button social"><i class="fa fa-github fa-fw"></i></a>
-</div>
-  </div>
+    
+
+
+
+
+
 </footer>
