@@ -7,14 +7,14 @@
     <app-agregar-experiencia></app-agregar-experiencia>
     <div class="container mt-5 mb-5">
       <div class="row">
-        <div class="col-md-6 offset-md-3"*ngFor="let experiencia of experiencias" >
+        <div class="col-md-6 offset-md-3"*ngFor="let Experiencias of expe">
           <ul class="timeline">
             <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-5"></i>
             <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-4"></i>
             <app-modal-experiencialaboral></app-modal-experiencialaboral>
             <li>
-              <h3>{{experiencia.puesto}}</h3>
-              <p>{{experiencia.lugar}}, {{experiencia.inicio}} - {{experiencia.fin}} </p>
+              <h3>{{Experiencias.puesto}}</h3>
+              <p>{{Experiencias.lugar}}, {{Experiencias.inicio}} - {{Experiencias.fin}} </p>
             </li>
           </ul>
        </div>

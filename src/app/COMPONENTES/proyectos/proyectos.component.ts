@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { Proyectos } from 'src/app/model/proyectos';
+import { ProyectosService } from 'src/app/service/proyectos.service';
 
 @Component({
   selector: 'app-proyectos',
@@ -8,43 +9,22 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
+  proyec: Proyectos[] = [];
 
-//inicializar variables de instancia
-imagenproyecto: string='';
-tituloproyecto: string='';
-descripcionproyecto: string='';
-inicioproyecto: string='';
-finproyecto: string='';
+  constructor(private proyectosService: ProyectosService,public router: Router) {}
 
- constructor(//inyectar el servicio para tener acceso en la clase de los metodos
-  private portfolioService: PortfolioService, public router: Router) {}
-
-ngOnInit(): void  {
-  //esto es almacenar en la variable de instancia los datos recuperados por el servicio
-  this.portfolioService.getDatos().subscribe(portfolio => { 
-    console.log(portfolio);
-   //definir informacion a mostrar;
-   this.imagenproyecto=portfolio.imagenproyecto;
-   this.tituloproyecto=portfolio.tituloproyecto;
-   this.descripcionproyecto=portfolio.descripcionproyecto;
-   this.inicioproyecto=portfolio.inicioproyecto;
-   this.finproyecto=portfolio.finproyecto;
-  })
  
+
+ ngOnInit(): void  {
+ this.agregarPersona();
+ }
+
+agregarPersona(): void{
+this.proyectosService.lista().subscribe(data => {this.proyec = data;})
 }
 
-//codigo para volver arriba
-scrolltoElement(selector:any){
-const element=
-document.querySelector(selector)
-element ?
-element.scrollIntoView({behavior:"smooth"}):null;
-
 }
 
 
-
-
-}
 
 

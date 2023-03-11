@@ -1,151 +1,31 @@
 .fa-solid.fa-pencil.fa-xl{
-    margin-left: 5%;
+    margin-left: 7%;
     padding: 1%;
   }
-
-
-  .frame {
-    width: 90%;
-    margin: 40px auto;
-    text-align: center;
-  }
-  .custom-btn {
-    width: 130px;
-    height: 40px;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
+  .fa-solid.fa-xmark.fa-xl{
+    margin-top: 1%;
   }
 
-
-/* 7 */
-.btn-7 {
-  background: linear-gradient(0deg, rgb(166, 201, 255) 0%, rgb(99, 99, 255) 100%);
-    line-height: 42px;
-    padding: 0;
-    border: none;
-     margin-left: 95%;
-  }
-  .btn-7 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .btn-7:before,
-  .btn-7:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: rgb(2, 164, 251);
-    box-shadow:
-     -7px -7px 20px 0px rgba(255,255,255,.9),
-     -4px -4px 5px 0px rgba(255,255,255,.9),
-     7px 7px 20px 0px rgba(0,0,0,.2),
-     4px 4px 5px 0px rgba(0,0,0,.3);
-    transition: all 0.3s ease;
-  }
-  .btn-7:before{
-     height: 0%;
-     width: 2px;
-  }
-  .btn-7:after {
-    width: 0%;
-    height: 2px;
-  }
-  .btn-7:hover{
-    color: rgb(2, 102, 251);
-    background: transparent;
-  }
-  .btn-7:hover:before {
-    height: 100%;
-  }
-  .btn-7:hover:after {
-    width: 100%;
-  }
-  .btn-7 span:before,
-  .btn-7 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: rgba(251,75,2,1);
-    box-shadow:
-     -7px -7px 20px 0px rgba(255,255,255,.9),
-     -4px -4px 5px 0px rgba(255,255,255,.9),
-     7px 7px 20px 0px rgba(0,0,0,.2),
-     4px 4px 5px 0px rgba(0,0,0,.3);
-    transition: all 0.3s ease;
-  }
-  .btn-7 span:before {
-    width: 2px;
-    height: 0%;
-  }
-  .btn-7 span:after {
-    height: 2px;
-    width: 0%;
-  }
-  .btn-7 span:hover:before {
-    height: 100%;
-  }
-  .btn-7 span:hover:after {
-    width: 100%;
-  }
-
-.proyecto{
-  margin-left: 35%;
-  margin-top: -20%;
-}
-button{
-  margin-top: 8%;
-}
-/*  Feature Section css */
-.feature-item {
-  height: 400px;
-  box-shadow: 2.5px 4.33px 30px 0 rgba(0, 0, 0, 0.425);
-  margin-top: 7%;
-  margin-left: -20%;
-}
-.left-img-sec {
-  width: 60%;
-  overflow: hidden;
-  border-radius: 5px 0 0 5px;
-}
-.left-test-sec {
-  width: 60%;
-  padding: 25px;
-}
-
-.left-img-sec img {
-  height: 100%;
-  width: auto !important;
-  max-width: inherit;
-  position: relative;
-  left: -80px;
-}
-
-.fa-solid.fa-pencil.fa-xl{
-  margin-left: 20%;
-  padding: 5%;
-}
-
-.feature-section.py-5{
-  display: flex;
-  margin-right: 20%;
-}
 
 .fa-regular.fa-plus.fa-xl{
   margin-left: 60%;
 }
+
+.card{
+  width: 50%; /* ancho del div */
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4); 
+  transform: translateY(-3%);
+}
+
+.cardp{
+  padding: 3%;
+}
+

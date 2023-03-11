@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
 
 @Component({
-  selector: 'app-modal-user',
-  templateUrl: './modal-user.component.html',
-  styleUrls: ['./modal-user.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class ModalUserComponent  implements OnInit {
-  form: FormGroup;
+export class loginComponent  implements OnInit {
+  form: UntypedFormGroup;
 
-  constructor(private formBuilder: FormBuilder, private router: Router) {
+  constructor(private formBuilder: UntypedFormBuilder, private router: Router) {
      ///Creamos el grupo de controles para el formulario de login
      this.form= this.formBuilder.group({
       password:['',[Validators.required, Validators.minLength(8)]],
@@ -59,5 +59,3 @@ export class ModalUserComponent  implements OnInit {
   }
 
 }
-
-

@@ -9,15 +9,14 @@
 
   <div class="progress-circle-container">
     <div class="row">
-      <div class="col-md-3" *ngFor="let habilidad of habilidadesduras">
+      <div class="col-md-3" *ngFor="let HabilidadesDuras of habilidadD">
         <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-12"></i>
         <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-11"></i>
 
         <app-modal-habilidadesduras></app-modal-habilidadesduras>
-        <h4>{{habilidad.habilidad}}</h4>
-        <div class={{habilidad.progreso}}>
-          <span>{{habilidad.porcentaje}}</span>
-        </div>
+        <h4>{{HabilidadesDuras.habilidad}}</h4>
+        <div class="progress-circle progress-{{HabilidadesDuras.porcentaje}}"><span>{{HabilidadesDuras.porcentaje}}</span>
+       </div>
       </div>
     </div>
   </div>

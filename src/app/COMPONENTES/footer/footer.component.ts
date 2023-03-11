@@ -1,28 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { Email } from 'src/app/model/email';
+import { EmailService } from 'src/app/service/email.service';
 import { Router } from '@angular/router';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit{
-//inicializar variables de instancia
-titulofooter: string='';
+export class FooterComponent implements OnInit {
+  email: Email[] = [];
 
+  constructor(private emailService: EmailService,public router: Router) {}
 
-constructor(//inyectar el servicio para tener acceso en la clase de los metodos
-private portfolioService: PortfolioService, public router: Router) {}
+ 
 
-  ngOnInit(): void {
-     //esto es almacenar en la variable de instancia los datos recuperados por el servicio
-  this.portfolioService.getDatos().subscribe(portfolio => { 
-    console.log(portfolio);
-   //definir informacion a mostrar;
-   this.titulofooter=portfolio.titulofooter;
-  })
+ ngOnInit(): void  {
+ this.agregarEmail();
+ }
 
+agregarEmail(): void{
+this.emailService.lista().subscribe(data => {this.email = data;})
 }
 
 }
+
+

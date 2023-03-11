@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { Banner } from 'src/app/model/banner';
+import { BannerService } from 'src/app/service/banner.service';
 
 @Component({
   selector: 'app-banner',
@@ -8,35 +9,18 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
+  banner: Banner[] = [];
 
-//inicializar variables de instancia
-banner: string='';
-titulobanner: string='';
-nombrebanner: string='';
+  constructor(private bannerService: BannerService,public router: Router) {}
 
- constructor(//inyectar el servicio para tener acceso en la clase de los metodos
-  private portfolioService: PortfolioService, public router: Router) {}
-
-ngOnInit(): void  {
-  //esto es almacenar en la variable de instancia los datos recuperados por el servicio
-  this.portfolioService.getDatos().subscribe(portfolio => { 
-    console.log(portfolio);
-   //definir informacion a mostrar;
-   this.banner=portfolio.banner;
-   this.titulobanner=portfolio.titulobanner;
-   this.nombrebanner=portfolio.nombrebanner;
-   })
  
+
+ ngOnInit(): void  {
+ this.agregarBanner();
+ }
+
+agregarBanner(): void{
+this.bannerService.lista().subscribe(data => {this.banner = data;})
 }
-//ts para scroll del botón al footer
-scrollToElement(selector:any) {
-  const element = document.querySelector(selector)
-  element ? element.scrollIntoView({behavior: "smooth"}): null;
-
-
-  
-}
-
-
 
 }

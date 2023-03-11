@@ -7,15 +7,16 @@
     <app-agregar-educacion></app-agregar-educacion>
     <div class="container mt-5 mb-5">
       <div class="row">
-        <div class="col-md-6 offset-md-3"*ngFor="let educacion of educaciones" >
+        <div class="col-md-6 offset-md-3"*ngFor="let Estudios of estud" >
           <ul class="timeline">
             <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-9"></i>
             <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-8"></i>
            <app-modal-educacion></app-modal-educacion>
             <li>
-              <h3>{{educacion.estudio}}</h3>
-              <p>{{educacion.lugar}}
-                {{educacion.descripcion}}  {{educacion.inicio}} - {{educacion.fin}}</p>
+              <h3>{{Estudios.estudio}}</h3>
+              <p>{{Estudios.lugar}}
+                {{Estudios.descripcion}}</p>
+                <p>{{Estudios.inicio}} - {{Estudios.fin}}</p>
             </li>
            </ul>
         </div>

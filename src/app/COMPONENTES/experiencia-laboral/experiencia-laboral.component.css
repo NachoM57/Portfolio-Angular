@@ -2,7 +2,8 @@
 ul.timeline {
   list-style-type: none;
   position: relative;
-  margin-left: 18%;
+  width: 50%; /* ancho del div */
+  margin: 0 auto;
 }
 ul.timeline:before {
   content: ' ';
@@ -38,3 +39,4 @@ ul.timeline > li:before {
 .fa-regular.fa-plus.fa-xl{
   margin-left: 60%;
 }
+

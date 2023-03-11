@@ -1,25 +1,25 @@
 <footer>
     <div class="container">
         <div class="row">
-                <h1> {{titulofooter}} </h1>
+                <h2>Contacto</h2>
         </div>
-        <div class="row input-container">
+        <div class="row input-container" *ngFor="let Email of email">
                 <div class="col-xs-12">
                     <div class="styled-input wide">
                         <input type="text" required />
-                        <label>Nombre</label> 
+                        <label>{{Email.nombre}}</label> 
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="styled-input">
                         <input type="text" required />
-                        <label>Email</label> 
+                        <label>{{Email.email}}</label> 
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
                         <textarea required></textarea>
-                        <label>Mensaje</label>
+                        <label>{{Email.mensaje}}</label>
                     </div>
                 </div>
                 <div class="col-xs-12">
@@ -27,10 +27,4 @@
                 </div>
         </div>
     </div>
-    
-
-
-
-
-
 </footer>

@@ -21,7 +21,6 @@ import { AdminComponent } from './admin/admin.component';
 import { ModalesComponent } from './COMPONENTES/modales/modales.component';
 import { ModalSobremiComponent } from './COMPONENTES/modales/modal-sobremi/modal-sobremi.component';
 import { ModalFotoperfilComponent } from './COMPONENTES/modales/modal-fotoperfil/modal-fotoperfil.component';
-import { ModalUserComponent } from './COMPONENTES/modales/modal-user/modal-user.component';
 import { ModalBannerComponent } from './COMPONENTES/modales/modal-banner/modal-banner.component';
 import { ModalExperiencialaboralComponent } from './COMPONENTES/modales/modal-experiencialaboral/modal-experiencialaboral.component';
 import { ModalEducacionComponent } from './COMPONENTES/modales/modal-educacion/modal-educacion.component';
@@ -35,6 +34,9 @@ import { AgregarEducacionComponent } from './COMPONENTES/modales/agregar-educaci
 import { AgregarHabilidadDComponent } from './COMPONENTES/modales/agregar-habilidad-d/agregar-habilidad-d.component';
 import { AgregarHabilidadBComponent } from './COMPONENTES/modales/agregar-habilidad-b/agregar-habilidad-b.component';
 import { AgregarProyectoComponent } from './COMPONENTES/modales/agregar-proyecto/agregar-proyecto.component';
+import { loginComponent } from './COMPONENTES/login/login.component';
+
+
 
 
 
@@ -57,7 +59,6 @@ import { AgregarProyectoComponent } from './COMPONENTES/modales/agregar-proyecto
     ModalesComponent,
     ModalSobremiComponent,
     ModalFotoperfilComponent,
-    ModalUserComponent,
     ModalBannerComponent,
     ModalExperiencialaboralComponent,
     ModalEducacionComponent,
@@ -70,13 +71,17 @@ import { AgregarProyectoComponent } from './COMPONENTES/modales/agregar-proyecto
     AgregarHabilidadDComponent,
     AgregarHabilidadBComponent,
     AgregarProyectoComponent,
+    loginComponent,
+    
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+  
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,13 @@
 body{
     background-color: rgb(246, 248, 255);
+    overflow-x: hidden;
 }
 
 h1{
     font-family: raleway;
+    color: #19429c;
 }
+
+
+
+ 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { HabilidadesBlandas } from 'src/app/model/habilidades-blandas';
+import { HabilidadesBlandasService } from 'src/app/service/habilidades-blandas.service';
 
 @Component({
   selector: 'app-habilidades-blandas',
@@ -8,26 +9,20 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./habilidades-blandas.component.css']
 })
 export class HabilidadesBlandasComponent implements OnInit {
+  habilidadB: HabilidadesBlandas[] = [];
 
-  //inicializar variables de instancia
-habilidadesblandas: any=[]
+  constructor(private habilidadesblandasService: HabilidadesBlandasService,public router: Router) {}
 
  
-  constructor(//inyectar el servicio para tener acceso en la clase de los metodos
-   private portfolioService: PortfolioService, public router: Router) {}
- 
+
  ngOnInit(): void  {
-   //esto es almacenar en la variable de instancia los datos recuperados por el servicio
-   this.portfolioService.getDatos().subscribe(portfolio => { 
-     console.log(portfolio);
-    //definir informacion a mostrar;
-    this.habilidadesblandas=portfolio.habilidadesblandas;
-  
- 
-   })
-  
+ this.agregarHabilidadesBlandas();
  }
- 
- }
+
+agregarHabilidadesBlandas(): void{
+this.habilidadesblandasService.lista().subscribe(data => {this.habilidadB = data;})
+}
+
+}
 
 

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Experiencias } from 'src/app/model/experiencias';
+import { ExperienciasService } from 'src/app/service/experiencias.service';
 import { Router } from '@angular/router';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+
 
 @Component({
   selector: 'app-experiencia-laboral',
@@ -8,25 +10,18 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./experiencia-laboral.component.css']
 })
 export class ExperienciaLaboralComponent implements OnInit {
+expe: Experiencias[] = [];
 
-  //inicializar variables de instancia
-experiencias: any=[]
+  constructor(private Experienciasservice: ExperienciasService,public router: Router) {}
+
  
-  constructor(//inyectar el servicio para tener acceso en la clase de los metodos
-   private portfolioService: PortfolioService, public router: Router) {}
- 
+
  ngOnInit(): void  {
-   //esto es almacenar en la variable de instancia los datos recuperados por el servicio
-   this.portfolioService.getDatos().subscribe(portfolio => { 
-     console.log(portfolio);
-    //definir informacion a mostrar;
-    this.experiencias=portfolio.experiencias;
-  
- 
-   })
-  
- }
- 
+ this.agregarExperiencia();
  }
 
+agregarExperiencia(): void{
+this.Experienciasservice.lista().subscribe(data => {this.expe = data;})
+}
 
+}
