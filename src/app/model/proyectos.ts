@@ -1,13 +1,13 @@
 export class Proyectos {
     id?: number;
-    imagen: String;
-    titulo: String;
-    descripcion: String;
-    inicio: String;
-    fin: String;
+    imagen: string;
+    titulo: string;
+    descripcion: string;
+    inicio: string;
+    fin: string;
 
 
-constructor(imagen: String,titulo: String,descripcion: String, inicio: String,fin: String){
+constructor(imagen: string,titulo: string,descripcion: string, inicio: string,fin: string){
     this.imagen = imagen;
     this.titulo = titulo;
     this.descripcion = descripcion;

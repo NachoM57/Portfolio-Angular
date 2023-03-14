@@ -23,6 +23,18 @@ agregarHabilidadesBlandas(): void{
 this.habilidadesblandasService.lista().subscribe(data => {this.habilidadB = data;})
 }
 
+borrar(id:number){
+  if(id !=undefined){
+    this.habilidadesblandasService.borrar(id).subscribe(
+      data=>{
+        this.agregarHabilidadesBlandas();
+        window.location.reload();
+      }, err => {
+        window.location.reload();
+      }
+    )
+  }
+}
 }
 
 

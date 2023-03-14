@@ -1,11 +1,11 @@
 export class HabilidadesDuras {
     id?: number;
-    habilidad: String;
-    porcentaje: String;
+    habilidad: string;
+    porcentaje: string;
 
 
 
-constructor(habilidad: String,porcentaje: String){
+constructor(habilidad: string,porcentaje: string){
     this.habilidad = habilidad;
     this.porcentaje = porcentaje;
 }

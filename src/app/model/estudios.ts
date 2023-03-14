@@ -1,13 +1,13 @@
 export class Estudios {
     id?: number;
-    estudio: String;
-    lugar: String;
-    inicio: String;
-    fin: String;
-    descripcion: String;
+    estudio: string;
+    lugar: string;
+    inicio: string;
+    fin: string;
+    descripcion: string;
 
 
-constructor(estudio: String,lugar: String, inicio: String,fin: String,descripcion: String){
+constructor(estudio: string,lugar: string, inicio: string,fin: string,descripcion: string){
     this.estudio = estudio;
     this.lugar = lugar;
     this.inicio = inicio;

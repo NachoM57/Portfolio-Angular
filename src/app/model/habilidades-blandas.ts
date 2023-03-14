@@ -1,12 +1,12 @@
 export class HabilidadesBlandas {
     id?: number;
-    imagen: String;
-    titulo: String;
-    descripcion: String;
+    imagen: string;
+    titulo: string;
+    descripcion: string;
 
 
 
-constructor(imagen: String,titulo: String,descripcion: String){
+constructor(imagen: string,titulo: string,descripcion: string){
     this.imagen = imagen;
     this.titulo = titulo;
     this.descripcion = descripcion;

@@ -23,10 +23,20 @@ agregarEstudio(): void{
 this.estudioservice.lista().subscribe(data => {this.estud = data;})
 }
 
-}
   
- 
- 
+borrar(id:number){
+  if(id !=undefined){
+    this.estudioservice.borrar(id).subscribe(
+      data=>{
+        this.agregarEstudio();
+        window.location.reload();
+      }, err => {
+        window.location.reload();
+      }
+    )
+  }
+}
+}
  
 
 

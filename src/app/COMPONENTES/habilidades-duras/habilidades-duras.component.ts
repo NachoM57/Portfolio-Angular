@@ -23,7 +23,19 @@ agregarHabilidadesDuras(): void{
 this.habilidadesdurasService.lista().subscribe(data => {this.habilidadD = data;})
 }
 
-}
 
+borrar(id:number){
+  if(id !=undefined){
+    this.habilidadesdurasService.borrar(id).subscribe(
+      data=>{
+        this.agregarHabilidadesDuras();
+        window.location.reload();
+      }, err => {
+        window.location.reload();
+      }
+    )
+  }
+}
+}
 
 

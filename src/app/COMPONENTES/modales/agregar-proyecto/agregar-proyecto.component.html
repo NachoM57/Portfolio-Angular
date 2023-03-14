@@ -1,36 +1,42 @@
-<!-- Modal -->
-<div class="modal fade" id="modal-39" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="mb-3">
-         <label for="formFileMultiple" class="form-label">Imagen</label>
-         <input class="form-control" type="file" id="formFileMultiple" multiple>
-       </div>
-       <label for="staticEmail" class="col-sm-5 col-form-label">Titulo</label> 
-       <div class="col-sm-10">
-         <input type="text" class="form-control-" id="titulo">
-       </div>
-       <label for="staticEmail" class="col-sm-5 col-form-label">Descripcion</label> 
-       <div class="col-sm-10">
-         <textarea type="text" class="form-control-" id="descripcion"></textarea>
-       </div>
-       <label for="staticEmail" class="col-sm-5 col-form-label">Inicio</label> 
-       <div class="col-sm-10">
-         <input type="text" class="form-control-" id="inicio">
-       </div>
-       <label for="staticEmail" class="col-sm-5 col-form-label">Fin</label> 
-       <div class="col-sm-10">
-         <input type="text" class="form-control-" id="fin">
-       </div>
-       <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+<i class="fa-regular fa-plus fa-xl" type="button" data-bs-toggle="modal" data-bs-target="#modalnuevo5" *ngIf="this.router.url ==='/admin'"></i> 
+<!--Modal crear nuevo-->
+<div class="modal" id="modalnuevo5" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar Proyecto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar()"></button>
+      </div>
+      <form [formGroup]="form"  novalidate #f="ngForm" name="proyectoForm">
+      <div class="modal-body" *ngIf="!enviado">
+        <div class="form-group">
+          <div class="mb-3">
+              <label for="imagen" class="form-label">Imagen</label>
+              <input class="form-control form-control-sm" name="imagen" formControlName="imagen" type="text" [(ngModel)]="proyecto.imagen">
+          </div>
+            <div class="mb-3">
+              <label for="titulo" class="form-label">Titulo</label>
+              <input class="form-control form-control-sm" name="titulo" formControlName="titulo" type="text" [(ngModel)]="proyecto.titulo">
+            </div>
+            <div class="mb-3">
+              <label for="descripcion" class="form-label">Descripcion</label>
+              <input class="form-control form-control-sm" name="descripcion" formControlName="descripcion" type="text" [(ngModel)]="proyecto.descripcion">
+            </div>
+            <div class="mb-3">
+                <label for="inicio" class="form-label">Inicio</label>
+                <input class="form-control form-control-sm" name="inicio" formControlName="inicio" type="text" [(ngModel)]="proyecto.inicio">
+              </div>
+              <div class="mb-3">
+                <label for="fin" class="form-label">Fin</label>
+                <input class="form-control form-control-sm" name="fin" formControlName="fin" type="text" [(ngModel)]="proyecto.fin">
+              </div>   
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="limpiar()">Limpiar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onCreate()" >Enviar</button>
         </div>
       </div>
-    </div>
-  </div>
+      </div>
+      </form>
+
 

@@ -16,13 +16,25 @@ export class ProyectosComponent implements OnInit {
  
 
  ngOnInit(): void  {
- this.agregarPersona();
+ this.agregarProyecto();
  }
 
-agregarPersona(): void{
+agregarProyecto(): void{
 this.proyectosService.lista().subscribe(data => {this.proyec = data;})
 }
 
+borrar(id:number){
+  if(id !=undefined){
+    this.proyectosService.borrar(id).subscribe(
+      data=>{
+        this.agregarProyecto();
+        window.location.reload();
+      }, err => {
+        window.location.reload();
+      }
+    )
+  }
+}
 }
 
 

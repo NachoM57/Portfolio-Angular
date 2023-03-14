@@ -1,11 +1,7 @@
 <!--proyectos-->
 <h1 class="text-center mt-0">Proyectos</h1>
 <hr class="divider"/>
-<i class="fa-regular fa-plus fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-39"></i>
 <app-agregar-proyecto></app-agregar-proyecto>
-  <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-14"></i>
-        <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-13"></i>
-        <app-modal-proyectos></app-modal-proyectos>
        <div class="cardp" *ngFor="let Proyectos of proyec">
         <div class="card" style="width: 20rem;">
           <img src="{{Proyectos.imagen}}" class="card-img-top" alt="...">
@@ -15,5 +11,8 @@
             <p>{{Proyectos.inicio}} {{Proyectos.fin}}</p>
           </div>
         </div>
+        <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-14"></i>
+        <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-13" (click)="borrar(Proyectos.id)"></i>
+              <app-modal-proyectos></app-modal-proyectos>
       </div>
 <br> <br> <br>

@@ -24,4 +24,16 @@ agregarExperiencia(): void{
 this.Experienciasservice.lista().subscribe(data => {this.expe = data;})
 }
 
+borrar(id:number){
+  if(id !=undefined){
+    this.Experienciasservice.borrar(id).subscribe(
+      data=>{
+        this.agregarExperiencia();
+        window.location.reload();
+      }, err => {
+        window.location.reload();
+      }
+    )
+  }
+}
 }

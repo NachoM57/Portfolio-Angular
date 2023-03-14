@@ -1,11 +1,11 @@
 export class Banner {
     id?: number;
-    imagenbanner: String;
-    nombrebanner: String;
-    titulobanner: String;
+    imagenbanner: string;
+    nombrebanner: string;
+    titulobanner: string;
   
 
-    constructor(imagenbanner: String,nombrebanner: String,titulobanner: String){
+    constructor(imagenbanner: string,nombrebanner: string,titulobanner: string){
     this.imagenbanner = imagenbanner;
     this.nombrebanner = nombrebanner;
     this.titulobanner = titulobanner;

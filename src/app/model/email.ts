@@ -1,11 +1,11 @@
 export class Email {
     id?: number;
-    nombre: String;
-    email: String;
-    mensaje: String;
+    nombre: string;
+    email: string;
+    mensaje: string;
    
 
-    constructor(nombre: String,email: String,mensaje: String){
+    constructor(nombre: string,email: string,mensaje: string){
     this.nombre = nombre;
     this.email = email;
     this.mensaje = mensaje;

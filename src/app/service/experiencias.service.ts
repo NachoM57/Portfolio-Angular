@@ -21,7 +21,7 @@ expURL = 'http://localhost:8080/experiencia'
   }
 
   public crear(experiencias:Experiencias): Observable<any>{
-  return this.httpclient.post<any>(this.expURL + '/nueva', Experiencias);
+  return this.httpclient.post<any>(this.expURL + '/nueva', experiencias);
 }
 
 

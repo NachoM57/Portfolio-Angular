@@ -1,7 +1,6 @@
 <!--habilidades blandas-->
 <h1 class="text-center mt-0">Habilidades Blandas</h1>
 <hr class="divider"/>
-<i class="fa-regular fa-plus fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-38"></i>
 <app-agregar-habilidad-b></app-agregar-habilidad-b>
 <section class="cards global">   
     <div class="container"></div>
@@ -12,7 +11,7 @@
             <h4>{{HabilidadesBlandas.titulo}}</h4>
             <p>{{HabilidadesBlandas.descripcion}}</p>
             <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"></i>
-            <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-12"></i>
+            <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-12" (click)="borrar(HabilidadesBlandas.id)"></i>
             <app-modal-habiliidadesblandas></app-modal-habiliidadesblandas>
         </div>
       </div>
