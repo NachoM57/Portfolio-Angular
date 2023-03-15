@@ -23,4 +23,16 @@ agregarBanner(): void{
 this.bannerService.lista().subscribe(data => {this.banner = data;})
 }
 
+borrar(id:number){
+  if(id !=undefined){
+    this.bannerService.borrar(id).subscribe(
+      data=>{
+        this.agregarBanner();
+        window.location.reload();
+      }, err => {
+        window.location.reload();
+      }
+    )
+  }
+}
 }

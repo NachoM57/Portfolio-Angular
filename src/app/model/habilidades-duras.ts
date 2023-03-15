@@ -5,8 +5,8 @@ export class HabilidadesDuras {
 
 
 
-constructor(habilidad: string,porcentaje: string){
-    this.habilidad = habilidad;
-    this.porcentaje = porcentaje;
-}
+    constructor(habilidad: string, porcentaje: string) {
+        this.habilidad = habilidad;
+        this.porcentaje = porcentaje;
+    }
 }

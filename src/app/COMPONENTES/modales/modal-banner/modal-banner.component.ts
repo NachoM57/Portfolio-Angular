@@ -1,9 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { RouterModule, Routes } from '@angular/router';
 import { Banner } from 'src/app/model/banner';
 import { BannerService } from 'src/app/service/banner.service';
-import { FormsModule } from '@angular/forms';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http'
 

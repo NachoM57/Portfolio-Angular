@@ -3,11 +3,11 @@ export class Banner {
     imagenbanner: string;
     nombrebanner: string;
     titulobanner: string;
-  
 
-    constructor(imagenbanner: string,nombrebanner: string,titulobanner: string){
-    this.imagenbanner = imagenbanner;
-    this.nombrebanner = nombrebanner;
-    this.titulobanner = titulobanner;
+
+    constructor(imagenbanner: string, nombrebanner: string, titulobanner: string) {
+        this.imagenbanner = imagenbanner;
+        this.nombrebanner = nombrebanner;
+        this.titulobanner = titulobanner;
     }
 }

@@ -1,48 +1,46 @@
-
-
-.fa-solid.fa-pencil.fa-xl{
+.fa-solid.fa-pencil.fa-xl {
   margin-left: 20%;
   padding: 5%;
 }
 
 
-h4{
+h4 {
   color: rgb(26, 102, 255);
 }
 
-.fa-regular.fa-plus.fa-xl{
+.fa-regular.fa-plus.fa-xl {
   margin-left: 60%;
 }
 
-.container{
+.container {
   width: 100%;
   display: flex;
 }
 
-.card{
+.card {
   width: 100%;
   margin: 10px;
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 
 }
 
-.cards.global{
+.cards.global {
   padding: 3%;
 }
 
-.card-body{
+.card-body {
   padding: 15px;
   text-align: center;
 }
 
-.card-body p{
+.card-body p {
   line-height: 1.5;
 }
-.card-body h4{
+
+.card-body h4 {
   font-weight: 400;
   margin-bottom: 15px;
 }
-

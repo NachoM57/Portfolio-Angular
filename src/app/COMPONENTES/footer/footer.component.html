@@ -1,30 +1,30 @@
 <footer>
     <div class="container">
         <div class="row">
-                <h2>Contacto</h2>
+            <h2>Contacto</h2>
         </div>
         <div class="row input-container" *ngFor="let Email of email">
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                        <input type="text" required />
-                        <label>{{Email.nombre}}</label> 
-                    </div>
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <input type="text" required />
+                    <label>{{Email.nombre}}</label>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input">
-                        <input type="text" required />
-                        <label>{{Email.email}}</label> 
-                    </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                    <input type="text" required />
+                    <label>{{Email.email}}</label>
                 </div>
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                        <textarea required></textarea>
-                        <label>{{Email.mensaje}}</label>
-                    </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <textarea required></textarea>
+                    <label>{{Email.mensaje}}</label>
                 </div>
-                <div class="col-xs-12">
-                    <div class="btn-lrg submit-btn">Enviar mensaje</div>
-                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="btn-lrg submit-btn">Enviar mensaje</div>
+            </div>
         </div>
     </div>
 </footer>

@@ -6,22 +6,23 @@
     <app-agregar-educacion></app-agregar-educacion>
     <div class="container mt-5 mb-5">
       <div class="row">
-        <div class="col-md-6 offset-md-3"*ngFor="let Estudios of estud" >
+        <div class="col-md-6 offset-md-3" *ngFor="let Estudios of estud">
           <ul class="timeline">
-            <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-9"></i>
-            <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-8" (click)="borrar(Estudios.id)"></i>
-           <app-modal-educacion></app-modal-educacion>
+            <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+              routerLink="/editEstudio/{{Estudios.id}}"></i>
+            <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+              (click)="borrar(Estudios.id)"></i>
             <li>
               <h3>{{Estudios.estudio}}</h3>
               <p>{{Estudios.lugar}}
                 {{Estudios.descripcion}}</p>
-                <p>{{Estudios.inicio}} - {{Estudios.fin}}</p>
+              <p>{{Estudios.inicio}} - {{Estudios.fin}}</p>
             </li>
-           </ul>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!--fin educacion-->
-<br> <br> <br> 
+<br> <br> <br>

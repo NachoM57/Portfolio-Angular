@@ -1,10 +1,8 @@
 /*barra navegador*/
-body{
+body {
     font-family: "Open Sans", sans-serif;
-  }
-  .navbar.navbar-expand-lg.bg-primary{ 
-      background-color: rgb(186, 185, 252) !important;
-  }
-  
+}
 
-  
+.navbar.navbar-expand-lg.bg-primary {
+    background-color: rgb(186, 185, 252) !important;
+}

@@ -25,4 +25,16 @@ agregarPersona(): void{
 this.personaService.lista().subscribe(data => {this.perso = data;})
 }
 
+borrar(id:number){
+  if(id !=undefined){
+    this.personaService.borrar(id).subscribe(
+      data=>{
+        this.agregarPersona();
+        window.location.reload();
+      }, err => {
+        window.location.reload();
+      }
+    )
+  }
+}
 }

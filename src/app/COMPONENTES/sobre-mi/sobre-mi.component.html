@@ -7,10 +7,6 @@
           <img src="{{Persona.imagenperfil}}" class="rounded-circle w-75" alt="..." title="...">
           <h4>{{Persona.nombre}} {{Persona.apellido}}</h4>
         </figure>
-        <!-- Button trigger modal -->
-        <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-3"></i>
-        <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-2"></i>
-         <app-modal-fotoperfil></app-modal-fotoperfil>
       </div>
       <div class="col col-sm-12 col-lg-2"></div>
       <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
@@ -18,11 +14,13 @@
           <img id="robot" src="http://www.stateofdigital.com/wp-content/uploads/2016/12/blue-robot-vector-art.png">
           <div class="blockabout-inner text-center text-sm-start">
             <div class="title-big pb-3 mb-3">
-              <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-4"></i>
-              <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-3"></i>
-              <app-modal-sobremi></app-modal-sobremi>
-
-             <div class="titulo"><h3>Desarrolador Web Full Stack Jr</h3></div> <br>
+              <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+                routerLink="/editPersona/{{Persona.id}}"></i>
+              <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+                (click)="borrar(Persona.id)"></i>
+              <div class="titulo">
+                <h3>Desarrolador Web Full Stack Jr</h3>
+              </div> <br>
               <h3 class="sbl">Sobre mi</h3>
             </div>
             <p class="description-p text-muted pe-0 pe-lg-0">
@@ -36,7 +34,3 @@
 <!--fin sobre mi-->
 
 <div class="br sobremi"> <br> <br> <br> <br> <br> </div>
-
-
-
-

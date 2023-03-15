@@ -1,24 +1,24 @@
 <!--habilidades blandas-->
 <h1 class="text-center mt-0">Habilidades Blandas</h1>
-<hr class="divider"/>
+<hr class="divider" />
 <app-agregar-habilidad-b></app-agregar-habilidad-b>
-<section class="cards global">   
+<section class="cards global">
     <div class="container"></div>
     <div class="row">
-    <div class="card" *ngFor="let HabilidadesBlandas of habilidadB" style="width: 18rem;">
-        <img src="{{HabilidadesBlandas.imagen}}" class="card-img-top" alt="">
-        <div class="card-body">
-            <h4>{{HabilidadesBlandas.titulo}}</h4>
-            <p>{{HabilidadesBlandas.descripcion}}</p>
-            <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-13"></i>
-            <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-12" (click)="borrar(HabilidadesBlandas.id)"></i>
-            <app-modal-habiliidadesblandas></app-modal-habiliidadesblandas>
+        <div class="card" *ngFor="let HabilidadesBlandas of habilidadB" style="width: 18rem;">
+            <img src="{{HabilidadesBlandas.imagen}}" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4>{{HabilidadesBlandas.titulo}}</h4>
+                <p>{{HabilidadesBlandas.descripcion}}</p>
+                <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+                    routerLink="/editHabilidadB/{{HabilidadesBlandas.id}}"></i>
+                <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+                    (click)="borrar(HabilidadesBlandas.id)"></i>
+            </div>
         </div>
-      </div>
     </div>
 </section>
 <!--fin habilidades blandas-->
 
 
-<br> <br> <br> 
-
+<br> <br> <br>

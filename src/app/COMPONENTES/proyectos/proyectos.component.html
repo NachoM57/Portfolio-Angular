@@ -1,18 +1,19 @@
 <!--proyectos-->
 <h1 class="text-center mt-0">Proyectos</h1>
-<hr class="divider"/>
+<hr class="divider" />
 <app-agregar-proyecto></app-agregar-proyecto>
-       <div class="cardp" *ngFor="let Proyectos of proyec">
-        <div class="card" style="width: 20rem;">
-          <img src="{{Proyectos.imagen}}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h2>{{Proyectos.titulo}}</h2>
-            <p>{{Proyectos.descripcion}}</p>
-            <p>{{Proyectos.inicio}} {{Proyectos.fin}}</p>
-          </div>
-        </div>
-        <i class="fa-solid fa-pencil fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#modal-14"></i>
-        <i class="fa-solid fa-xmark fa-xl"*ngIf="this.router.url ==='/admin'" type="button" data-bs-toggle="modal" data-bs-target="#eliminar-13" (click)="borrar(Proyectos.id)"></i>
-              <app-modal-proyectos></app-modal-proyectos>
-      </div>
+<div class="cardp" *ngFor="let Proyectos of proyec">
+  <div class="card" style="width: 20rem;">
+    <img src="{{Proyectos.imagen}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2>{{Proyectos.titulo}}</h2>
+      <p>{{Proyectos.descripcion}}</p>
+      <p>{{Proyectos.inicio}} {{Proyectos.fin}}</p>
+    </div>
+  </div>
+  <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+    routerLink="/editProyecto/{{Proyectos.id}}"></i>
+  <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+    (click)="borrar(Proyectos.id)"></i>
+</div>
 <br> <br> <br>

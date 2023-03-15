@@ -20,7 +20,6 @@ import { BarraNavegacionAdminhtmlComponent } from './COMPONENTES/barra-navegacio
 import { AdminComponent } from './admin/admin.component';
 import { ModalesComponent } from './COMPONENTES/modales/modales.component';
 import { ModalSobremiComponent } from './COMPONENTES/modales/modal-sobremi/modal-sobremi.component';
-import { ModalFotoperfilComponent } from './COMPONENTES/modales/modal-fotoperfil/modal-fotoperfil.component';
 import { ModalBannerComponent } from './COMPONENTES/modales/modal-banner/modal-banner.component';
 import { ModalExperiencialaboralComponent } from './COMPONENTES/modales/modal-experiencialaboral/modal-experiencialaboral.component';
 import { ModalEducacionComponent } from './COMPONENTES/modales/modal-educacion/modal-educacion.component';
@@ -58,7 +57,6 @@ import { loginComponent } from './COMPONENTES/login/login.component';
     AdminComponent,
     ModalesComponent,
     ModalSobremiComponent,
-    ModalFotoperfilComponent,
     ModalBannerComponent,
     ModalExperiencialaboralComponent,
     ModalEducacionComponent,

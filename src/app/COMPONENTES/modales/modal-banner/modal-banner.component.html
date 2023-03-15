@@ -1,26 +1,29 @@
 <div class="container" *ngIf="banner">
   <div class="row">
-        <form  (ngSubmit)="onEditar()" novalidate #f="ngForm" [formGroup]="form">
-          <div class="mb-3">
-            <div class="form group">
-              <label for="img" class="form-label">Imagen</label>
-              <input class="form-control form-control-sm" id="img" type="text" formControlName="img" [(ngModel)]="banner.imagenbanner">
-          </div>
+    <form (ngSubmit)="onEditar()" novalidate #f="ngForm" [formGroup]="form">
+      <div class="mb-3">
+        <div class="form group">
+          <label for="imagenbanner" class="form-label">Imagen</label>
+          <input class="form-control form-control-sm" id="imagenbanner" type="text" formControlName="imagenbanner"
+            [(ngModel)]="banner.imagenbanner">
         </div>
-            <div class="mb-3">
-              <div class="form group">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input class="form-control form-control-sm" id="nombre" formControlName="nombre" type="text" [(ngModel)]="banner.nombrebanner">
-            </div>
-          </div>
-          <div class="mb-3">
-            <div class="form group">
-            <label for="titulo" class="form-label">Titulo</label>
-            <input class="form-control form-control-sm" id="titulo" formControlName="titulo" type="text" [(ngModel)]="banner.titulobanner">
-          </div>
+      </div>
+      <div class="mb-3">
+        <div class="form group">
+          <label for="nombrebanner" class="form-label">Nombre</label>
+          <input class="form-control form-control-sm" id="nombrebanner" formControlName="nombrebanner" type="text"
+            [(ngModel)]="banner.nombrebanner">
         </div>
-        <button type="button" class="btn btn-secondary" (click)="volver($event)" >Cerrar</button>
-        <button type="submit" class="btn btn-primary" (click)="onEnviar($event)" >Actualizar</button>
+      </div>
+      <div class="mb-3">
+        <div class="form group">
+          <label for="titulobanner" class="form-label">Titulo</label>
+          <input class="form-control form-control-sm" id="titulobanner" formControlName="titulobanner" type="text"
+            [(ngModel)]="banner.titulobanner">
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary" (click)="volver($event)">Cerrar</button>
+      <button type="submit" class="btn btn-primary" (click)="onEnviar($event)">Actualizar</button>
     </form>
   </div>
-  </div>
+</div>

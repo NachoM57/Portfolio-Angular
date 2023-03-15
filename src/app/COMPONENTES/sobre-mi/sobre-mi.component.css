@@ -1,61 +1,66 @@
 /*Sobremi*/
 
 #sobremi {
-    position: relative;
-    
-  }
-  h4{
+  position: relative;
+
+}
+
+h4 {
   padding-left: 15%;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   margin-top: 5%;
-  }
+}
 
 
-  .blockabout {
-    padding: 10px;
-    background: transparent;
-  }
-  
-  .blockabout-inner {
-    padding: 70px;
-    border: 2px solid #4e4e4e;
-    font-size: large;
-  }
-  #perfil{
-  position:absolute;
+.blockabout {
+  padding: 10px;
+  background: transparent;
+}
+
+.blockabout-inner {
+  padding: 70px;
+  border: 2px solid #4e4e4e;
+  font-size: large;
+}
+
+#perfil {
+  position: absolute;
   left: 20px;
-  }
-  
-  .col-6.mt-4{
-      position: absolute;
-      right: 90px;
-  }
-  .fa-solid.fa-pencil.fa-xl{
-    margin-left: 20%;
-    padding: 5%;
-  }
-  
-  .rounded-circle.w-75{
-    box-shadow:0 0 10px rgba(0, 0, 0, 1);
-  }
-  .titulo{
-    background: linear-gradient(90deg,#7cebff,rgb(67, 67, 255));
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+}
 
-  #robot {
-    display: block;
-    margin: auto;
-    height: 60px;
-    filter: grayscale(100%);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all .1s ease-in-out;
-  }
-  #robot:hover {
-    filter: grayscale(0%);
-  }
-  
-.sbl{
+.col-6.mt-4 {
+  position: absolute;
+  right: 90px;
+}
+
+.fa-solid.fa-pencil.fa-xl {
+  margin-left: 20%;
+  padding: 5%;
+}
+
+.rounded-circle.w-75 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.titulo {
+  background: linear-gradient(90deg, #7cebff, rgb(67, 67, 255));
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#robot {
+  display: block;
+  margin: auto;
+  height: 60px;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#robot:hover {
+  filter: grayscale(0%);
+}
+
+.sbl {
   color: #19429c;
 }

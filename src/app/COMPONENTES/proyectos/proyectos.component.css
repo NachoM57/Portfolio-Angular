@@ -1,26 +1,27 @@
-.fa-solid.fa-pencil.fa-xl{
-    margin-left: 30%;
-    padding: 1%;
-  }
-  .fa-solid.fa-xmark.fa-xl{
-    margin-top: 1%;
-  }
+.fa-solid.fa-pencil.fa-xl {
+  margin-left: 30%;
+  padding: 1%;
+}
 
-.card{
-  width: 50%; /* ancho del div */
+.fa-solid.fa-xmark.fa-xl {
+  margin-top: 1%;
+}
+
+.card {
+  width: 50%;
+  /* ancho del div */
   margin: 0 auto;
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover{
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.4); 
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
 
-.cardp{
+.cardp {
   padding: 3%;
 }
-

@@ -1,4 +1,5 @@
-<i class="fa-regular fa-plus fa-xl" type="button" data-bs-toggle="modal" data-bs-target="#modalnuevo4" *ngIf="this.router.url ==='/admin'"></i> 
+<i class="fa-regular fa-plus fa-xl" type="button" data-bs-toggle="modal" data-bs-target="#modalnuevo4"
+  *ngIf="this.router.url ==='/admin'"></i>
 <!--Modal crear nuevo-->
 <div class="modal" id="modalnuevo4" tabindex="-1">
   <div class="modal-dialog">
@@ -7,28 +8,31 @@
         <h5 class="modal-title">Agregar Habilidad Blanda</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar()"></button>
       </div>
-      <form [formGroup]="form"  novalidate #f="ngForm" name="habilidadBForm">
-      <div class="modal-body" *ngIf="!enviado">
-        <div class="form-group">
-          <div class="mb-3">
+      <form [formGroup]="form" novalidate #f="ngForm" name="habilidadBForm">
+        <div class="modal-body" *ngIf="!enviado">
+          <div class="form-group">
+            <div class="mb-3">
               <label for="imagen" class="form-label">Imagen</label>
-              <input class="form-control form-control-sm" name="Imagen" formControlName="Imagen" type="text" [(ngModel)]="habilidadB.imagen">
-          </div>
+              <input class="form-control form-control-sm" name="Imagen" formControlName="Imagen" type="text"
+                [(ngModel)]="habilidadB.imagen">
+            </div>
             <div class="mb-3">
               <label for="titulo" class="form-label">Titulo</label>
-              <input class="form-control form-control-sm" name="titulo" formControlName="titulo" type="text" [(ngModel)]="habilidadB.titulo">
+              <input class="form-control form-control-sm" name="titulo" formControlName="titulo" type="text"
+                [(ngModel)]="habilidadB.titulo">
             </div>
             <div class="mb-3">
               <div class="mb-3">
                 <label for="descripcion" class="form-label">Descripcion</label>
-                <input class="form-control form-control-sm" name="descripcion" formControlName="descripcion" type="text" [(ngModel)]="habilidadB.descripcion">
+                <input class="form-control form-control-sm" name="descripcion" formControlName="descripcion" type="text"
+                  [(ngModel)]="habilidadB.descripcion">
               </div>
-              </div>   
-      <div class="modal-footer">
-        <button type="button" class="btn btn-light" (click)="limpiar()">Limpiar</button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="submit" class="btn btn-primary" (click)="onCreate()" >Enviar</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" (click)="limpiar()">Limpiar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary" (click)="onCreate()">Enviar</button>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
       </form>

@@ -1,33 +1,37 @@
 /*barra navegador*/
-body{
-    font-family: "Open Sans", sans-serif;
-  }
-  .navbar.navbar-expand-lg.bg-primary{ 
-      background-color: rgb(186, 185, 252) !important;
-  }
-  .fa-brands.fa-facebook.fa-2xl,
-  .fa-brands.fa-instagram.fa-2xl,
-  .fa-brands.fa-github.fa-2xl,
-  .fa-solid.fa-user.fa-2xl{
-      color: #000000;
-  }
-  
-  .fa-brands.fa-facebook.fa-2xl:hover{
-    color: #2300d0;
-}
-.fa-brands.fa-instagram.fa-2xl:hover{
-    color: #ff00ffab;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-.fa-brands.fa-github.fa-2xl:hover{
+.navbar.navbar-expand-lg.bg-primary {
+  background-color: rgb(186, 185, 252) !important;
+}
+
+.fa-brands.fa-facebook.fa-2xl,
+.fa-brands.fa-instagram.fa-2xl,
+.fa-brands.fa-github.fa-2xl,
+.fa-solid.fa-user.fa-2xl {
+  color: #000000;
+}
+
+.fa-brands.fa-facebook.fa-2xl:hover {
+  color: #2300d0;
+}
+
+.fa-brands.fa-instagram.fa-2xl:hover {
+  color: #ff00ffab;
+}
+
+.fa-brands.fa-github.fa-2xl:hover {
   color: #727272;
 }
-.fa-solid.fa-user.fa-2xl:hover{
+
+.fa-solid.fa-user.fa-2xl:hover {
   color: #1408977e;
 }
 
-  
-  .list-group.list-group-horizontal{
-      --bs-list-group-bg: transparent;
-      --bs-list-group-border-width:transparent;
-  }
+
+.list-group.list-group-horizontal {
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-width: transparent;
+}

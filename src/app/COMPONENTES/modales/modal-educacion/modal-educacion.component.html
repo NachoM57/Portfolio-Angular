@@ -1,31 +1,43 @@
-<!-- Modal -->
-<div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <label for="staticEmail" class="col-sm-5 col-form-label">Estudio</label> 
-        <div class="col-sm-10">
-          <input type="text" class="form-control-" id="lugardondetrabaje">
-        </div>
-        <label for="mensaje" class="col-sm-5 col-form-label">Descripcion</label> 
-        <div class="col-sm-10">
-          <textarea type="text" class="form-control-" id="Descripcion"></textarea>
-        </div>
-        <label for="staticEmail" class="col-sm-5 col-form-label">Inicio</label> 
-        <div class="col-sm-10">
-          <input type="text" class="form-control-" id="Inicio">
-        </div>
-        <label for="staticEmail" class="col-sm-5 col-form-label">Fin</label> 
-        <div class="col-sm-10">
-          <input type="text" class="form-control-" id="Fin">
-        </div>
-       <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+<div class="container" *ngIf="estudios">
+  <div class="row">
+    <form (ngSubmit)="onEditar()" novalidate #f="ngForm" [formGroup]="form">
+      <div class="mb-3">
+        <div class="form group">
+          <label for="estudio" class="form-label">Estudio</label>
+          <input class="form-control form-control-sm" id="estudio" type="text" formControlName="estudio"
+            [(ngModel)]="estudios.estudio">
         </div>
       </div>
-    </div>
+      <div class="mb-3">
+        <div class="form group">
+          <label for="lugar" class="form-label">Lugar</label>
+          <input class="form-control form-control-sm" id="lugar" formControlName="lugar" type="text"
+            [(ngModel)]="estudios.lugar">
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form group">
+          <label for="descripcion" class="form-label">Descripcion</label>
+          <input class="form-control form-control-sm" id="descripcion" formControlName="descripcion" type="text"
+            [(ngModel)]="estudios.descripcion">
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form group">
+          <label for="inicio" class="form-label">Inicio</label>
+          <input class="form-control form-control-sm" id="inicio" formControlName="inicio" type="text"
+            [(ngModel)]="estudios.inicio">
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form group">
+          <label for="fin" class="form-label">Fin</label>
+          <input class="form-control form-control-sm" id="fin" formControlName="fin" type="text"
+            [(ngModel)]="estudios.fin">
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary" (click)="volver($event)">Cerrar</button>
+      <button type="submit" class="btn btn-primary" (click)="onEnviar($event)">Actualizar</button>
+    </form>
   </div>
+</div>
