@@ -5,7 +5,7 @@
 
 
 h4 {
-  color: rgb(26, 102, 255);
+  color: #504dff;
 }
 
 .fa-regular.fa-plus.fa-xl {
@@ -19,12 +19,16 @@ h4 {
 
 .card {
   width: 100%;
-  margin: 10px;
+  margin: 20px;
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 
+}
+
+.row{
+  margin-left: 6%;
 }
 
 .cards.global {
@@ -44,3 +48,4 @@ h4 {
   font-weight: 400;
   margin-bottom: 15px;
 }
+

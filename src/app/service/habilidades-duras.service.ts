@@ -7,7 +7,7 @@ import { HabilidadesDuras } from '../model/habilidades-duras';
   providedIn: 'root'
 })
 export class HabilidadesDurasService {
-  habURL = 'http://localhost:8080/habilidaddura'
+  habURL = 'https://backendnacho.onrender.com/habilidaddura'
   
   constructor(private http: HttpClient) { }
 

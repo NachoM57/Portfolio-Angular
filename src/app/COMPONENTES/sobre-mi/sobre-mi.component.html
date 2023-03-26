@@ -2,24 +2,22 @@
 <section id="sobremi" class="pt-5 pb-5">
   <div class="container wrapabout" *ngFor="let Persona of perso">
     <div class="row justify-content-md-center">
-      <div class="col col-sm-5 col-lg-4 mt-5 mt-lg-0">
+      <div class="col">
         <figure class="potoaboutwrap">
           <img src="{{Persona.imagenperfil}}" class="rounded-circle w-75" alt="..." title="...">
           <h4>{{Persona.nombre}} {{Persona.apellido}}</h4>
         </figure>
       </div>
-      <div class="col col-sm-12 col-lg-2"></div>
+      <div class="col"></div>
       <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
         <div class="blockabout">
           <img id="robot" src="http://www.stateofdigital.com/wp-content/uploads/2016/12/blue-robot-vector-art.png">
           <div class="blockabout-inner text-center text-sm-start">
             <div class="title-big pb-3 mb-3">
-              <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+              <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
                 routerLink="/editPersona/{{Persona.id}}"></i>
-              <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
-                (click)="borrar(Persona.id)"></i>
               <div class="titulo">
-                <h3>Desarrolador Web Full Stack Jr</h3>
+                <h3>Desarrollador Web Full Stack Jr</h3>
               </div> <br>
               <h3 class="sbl">Sobre mi</h3>
             </div>

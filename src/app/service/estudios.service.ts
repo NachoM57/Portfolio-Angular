@@ -7,7 +7,7 @@ import { Estudios } from '../model/estudios';
   providedIn: 'root'
 })
 export class EstudiosService {
-  estURL = 'http://localhost:8080/estudio'
+  estURL = 'https://backendnacho.onrender.com/estudio'
   
   constructor(private httpclient: HttpClient) { }
 

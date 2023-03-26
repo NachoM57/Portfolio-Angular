@@ -2,18 +2,20 @@
 <h1 class="text-center mt-0">Proyectos</h1>
 <hr class="divider" />
 <app-agregar-proyecto></app-agregar-proyecto>
+<div class="row">
 <div class="cardp" *ngFor="let Proyectos of proyec">
   <div class="card" style="width: 20rem;">
-    <img src="{{Proyectos.imagen}}" class="card-img-top" alt="...">
+    <a href="https://frontend-argentina-progr-6523c.web.app/index"><img src="{{Proyectos.imagen}}" class="card-img-top" type="button" alt="..."></a>
     <div class="card-body">
       <h2>{{Proyectos.titulo}}</h2>
       <p>{{Proyectos.descripcion}}</p>
       <p>{{Proyectos.inicio}} {{Proyectos.fin}}</p>
     </div>
   </div>
-  <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+  <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
     routerLink="/editProyecto/{{Proyectos.id}}"></i>
-  <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+  <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
     (click)="borrar(Proyectos.id)"></i>
+</div>
 </div>
 <br> <br> <br>

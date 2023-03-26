@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Banner } from 'src/app/model/banner';
 import { BannerService } from 'src/app/service/banner.service';
+import { TokenService } from 'src/app/service/token.service';
+
 
 @Component({
   selector: 'app-banner',
@@ -10,29 +12,25 @@ import { BannerService } from 'src/app/service/banner.service';
 })
 export class BannerComponent implements OnInit {
   banner: Banner[] = [];
+ isLogged=false;
 
-  constructor(private bannerService: BannerService,public router: Router) {}
+  constructor(private bannerService: BannerService,public router: Router, private tokenService: TokenService) {}
 
  
 
  ngOnInit(): void  {
  this.agregarBanner();
- }
+     if(this.tokenService.getToken()){
+      this.isLogged= true;
+    } else {
+      this.isLogged = false;
+    }
+  }
 
 agregarBanner(): void{
 this.bannerService.lista().subscribe(data => {this.banner = data;})
 }
 
-borrar(id:number){
-  if(id !=undefined){
-    this.bannerService.borrar(id).subscribe(
-      data=>{
-        this.agregarBanner();
-        window.location.reload();
-      }, err => {
-        window.location.reload();
-      }
-    )
-  }
-}
+
+
 }

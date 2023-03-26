@@ -7,7 +7,7 @@ import { Banner } from '../model/banner';
   providedIn: 'root'
 })
 export class BannerService {
-banURL = 'http://localhost:8080/banner'
+banURL = 'https://backendnacho.onrender.com/banner'
   
   constructor(private http: HttpClient) { }
 

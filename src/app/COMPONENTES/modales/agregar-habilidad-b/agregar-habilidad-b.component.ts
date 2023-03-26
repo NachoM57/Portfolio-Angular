@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HabilidadesBlandas } from 'src/app/model/habilidades-blandas';
 import { HabilidadesBlandasService } from 'src/app/service/habilidades-blandas.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-agregar-habilidad-b',
@@ -18,8 +19,8 @@ titulo: '',
 descripcion: '',
 }
 enviado = false;
-
-constructor(private sHabilidadB:HabilidadesBlandasService, public router: Router, private formbuilder:FormBuilder){
+isLogged=false;
+constructor(private sHabilidadB:HabilidadesBlandasService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
   this.form = this.formbuilder.group({
 imagen: [''],
 titulo: [''],
@@ -28,6 +29,11 @@ descripcion: [''],
 }
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged= true;
+    } else {
+      this.isLogged = false;
+    }
     }
 
     onCreate(): void{

@@ -1,16 +1,16 @@
 <!--Educacion-->
 <section id="educacion" class="educacion">
   <div class="col-12">
-    <h1 class="text-center mt-0"> Educacion</h1>
-    <hr class="divider" />
+    <h1 class="text-center mt-0">Educacion</h1>
+    <hr class="divider"/>
     <app-agregar-educacion></app-agregar-educacion>
     <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col-md-6 offset-md-3" *ngFor="let Estudios of estud">
           <ul class="timeline">
-            <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+            <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
               routerLink="/editEstudio/{{Estudios.id}}"></i>
-            <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+            <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
               (click)="borrar(Estudios.id)"></i>
             <li>
               <h3>{{Estudios.estudio}}</h3>

@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Experiencias } from 'src/app/model/experiencias';
 import { ExperienciasService } from 'src/app/service/experiencias.service';
-
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-agregar-experiencia',
@@ -13,15 +13,15 @@ import { ExperienciasService } from 'src/app/service/experiencias.service';
 export class AgregarExperienciaComponent implements OnInit{
   form: FormGroup;
   experiencia: Experiencias = {
-
 puesto: '',
 lugar: '',
 inicio: '',
 fin: '',
 }
 enviado = false;
+isLogged=false;
 
-constructor(private sExperiencia:ExperienciasService, public router: Router, private formbuilder:FormBuilder){
+constructor(private sExperiencia:ExperienciasService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
   this.form = this.formbuilder.group({
 puesto: [''],
 lugar: [''],
@@ -31,6 +31,11 @@ fin: [''],
 }
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged= true;
+    } else {
+      this.isLogged = false;
+    }
     }
 
     onCreate(): void{

@@ -7,7 +7,7 @@ import { HabilidadesBlandas } from '../model/habilidades-blandas';
   providedIn: 'root'
 })
 export class HabilidadesBlandasService {
-  habiURL = 'http://localhost:8080/habilidadblanda'
+  habiURL = 'https://backendnacho.onrender.com/habilidadblanda'
   
   constructor(private http: HttpClient) { }
 

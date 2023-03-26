@@ -7,7 +7,7 @@ import { Email } from '../model/email';
   providedIn: 'root'
 })
 export class EmailService {
-  emURL = 'http://localhost:8080/email'
+  emURL = 'https://backendnacho.onrender.com/email'
   
   constructor(private http: HttpClient) { }
 

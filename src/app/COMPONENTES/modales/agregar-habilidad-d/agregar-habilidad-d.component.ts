@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HabilidadesDuras } from 'src/app/model/habilidades-duras';
 import { HabilidadesDurasService } from 'src/app/service/habilidades-duras.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-agregar-habilidad-d',
@@ -17,8 +18,8 @@ habilidad: '',
 porcentaje: '',
 }
 enviado = false;
-
-constructor(private sHabilidadD:HabilidadesDurasService, public router: Router, private formbuilder:FormBuilder){
+isLogged=false;
+constructor(private sHabilidadD:HabilidadesDurasService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
   this.form = this.formbuilder.group({
 habilidad: [''],
 porcentaje: [''],
@@ -26,6 +27,11 @@ porcentaje: [''],
 }
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged= true;
+    } else {
+      this.isLogged = false;
+    }
     }
 
     onCreate(): void{

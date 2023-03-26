@@ -9,9 +9,9 @@
   <div class="progress-circle-container">
     <div class="row">
       <div class="col-md-3" *ngFor="let HabilidadesDuras of habilidadD">
-        <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+        <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
           routerLink="/editHabilidadD/{{HabilidadesDuras.id}}"></i>
-        <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+        <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
           (click)="borrar(HabilidadesDuras.id)"></i>
         <h4>{{HabilidadesDuras.habilidad}}</h4>
         <div class="progress-circle progress-{{HabilidadesDuras.porcentaje}}">

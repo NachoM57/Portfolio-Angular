@@ -6,8 +6,7 @@
 }
 
 h4 {
-  padding-left: 15%;
-  font-family: 'Times New Roman', Times, serif;
+  padding-left: 4%;
   font-style: italic;
   margin-top: 5%;
 }
@@ -45,6 +44,7 @@ h4 {
 
 .titulo {
   background: linear-gradient(90deg, #7cebff, rgb(67, 67, 255));
+ border-radius: 5px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -62,5 +62,10 @@ h4 {
 }
 
 .sbl {
-  color: #19429c;
+  color: #667dc0;
 }
+
+.description-p.text-muted.pe-0.pe-lg-0{
+  font-size: 18px;
+}
+

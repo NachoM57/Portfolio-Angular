@@ -4,16 +4,14 @@
   <div class="d-flex align-items-center d-block w-100" height="900"
     [style.backgroundImage]="'url(' + Banner.imagenbanner + ')'" [style.backgroundSize]="'cover'">
     <div class=" col col-7">
+      <br>
       <h1>{{Banner.nombrebanner}}</h1>
       <h3>{{Banner.titulobanner}}</h3>
     </div>
   </div>
-  <!-- Button trigger modal -->
   <div class="edicion">
-    <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+    <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
       routerLink="/editBanner/{{Banner.id}}"></i>
-    <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
-      (click)="borrar(Banner.id)"></i>
   </div>
 </section>
 

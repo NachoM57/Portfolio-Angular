@@ -1,24 +1,29 @@
   .fa-brands.fa-facebook.fa-2xl,
   .fa-brands.fa-instagram.fa-2xl,
   .fa-brands.fa-github.fa-2xl,
-  .fa-solid.fa-user-lock.fa-2xl {
+  .fa-solid.fa-user-lock.fa-2xl,
+  .fa-solid.fa-arrow-right-from-bracket.fa-xl.p-2 {
     color: #000000;
   }
 
   .fa-brands.fa-facebook.fa-2xl:hover {
-    color: #2300d0;
+    color: #0000ff;
   }
 
   .fa-brands.fa-instagram.fa-2xl:hover {
-    color: #ff00ffab;
+    color: #d50adc;
   }
 
   .fa-brands.fa-github.fa-2xl:hover {
-    color: #727272;
+    color: #e1e1e1;
   }
 
   .fa-solid.fa-user-lock.fa-2xl:hover {
-    color: #1408977e;
+    color: #31a6ff;
+  }
+
+  .fa-solid.fa-arrow-right-from-bracket.fa-xl.p-2:hover {
+    color: #31a6ff;
   }
 
 

@@ -5,14 +5,14 @@
 <section class="cards global">
     <div class="container"></div>
     <div class="row">
-        <div class="card" *ngFor="let HabilidadesBlandas of habilidadB" style="width: 18rem;">
+        <div class="card g-0" *ngFor="let HabilidadesBlandas of habilidadB" style="width: 18rem;">
             <img src="{{HabilidadesBlandas.imagen}}" class="card-img-top" alt="">
             <div class="card-body">
                 <h4>{{HabilidadesBlandas.titulo}}</h4>
                 <p>{{HabilidadesBlandas.descripcion}}</p>
-                <i class="fa-solid fa-pencil fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+                <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
                     routerLink="/editHabilidadB/{{HabilidadesBlandas.id}}"></i>
-                <i class="fa-solid fa-xmark fa-xl" *ngIf="this.router.url ==='/admin'" type="button"
+                <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
                     (click)="borrar(HabilidadesBlandas.id)"></i>
             </div>
         </div>

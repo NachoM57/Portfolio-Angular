@@ -7,7 +7,7 @@
         <li class="list-group-item"><a href="https://github.com/NachoM57" target="_blank"><i
                     class="fa-brands fa-github fa-2xl"></i></a></li>
         <!-- boton disparador modal -->
-        <li class="list-group-item"><i class="fa-solid fa-user-lock fa-2xl" type=button data-bs-toggle="modal"
-                data-bs-target="#exampleModal"></i></li>
+        <li class="list-group-item"><i class="fa-solid fa-user-lock fa-2xl" type=button (click)="login()" *ngIf="!isLogged"></i></li>
+        <li class="list-group-item"><i class="fa-solid fa-arrow-right-from-bracket fa-xl p-2" type=button (click)="onLogOut()" *ngIf="isLogged"></i></li>
     </ul>
 </div>

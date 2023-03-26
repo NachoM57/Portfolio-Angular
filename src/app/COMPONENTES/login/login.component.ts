@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import { LoginUsuario } from 'src/app/model/login-usuario';
+import { AuthService } from 'src/app/service/auth.service';
+import { TokenService } from 'src/app/service/token.service';
 
 
 @Component({
@@ -9,38 +11,42 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class loginComponent  implements OnInit {
+export class loginComponent implements OnInit {
   form: UntypedFormGroup;
+  isLogged = false;
+  isLogginFail = false;
+  loginUsuario!: LoginUsuario;
+  nombreUsuario!: string;
+  password! : string;
+  roles: string[] = [];
+  errMsj!: string;
 
-  constructor(private formBuilder: UntypedFormBuilder, private router: Router) {
+  constructor(private formBuilder: UntypedFormBuilder, private router: Router, private tokenService: TokenService, private authService: AuthService) {
      ///Creamos el grupo de controles para el formulario de login
      this.form= this.formBuilder.group({
-      password:['',[Validators.required, Validators.minLength(8)]],
-      email:['', [Validators.required, Validators.email]],
+      password:['',[Validators.required, Validators.minLength(3)]],
+      nombreUsuario:['', [Validators.required, Validators.email]],
    })
   }
    
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+      this.isLogginFail = false;
+      this.roles = this.tokenService.getAuthorities();
+    }
   }
-  login() {
-    this.router.navigate(['login'])
-  }
+
   get Password(){
     return this.form.get("password");
   }
- 
-  get Mail(){
-   return this.form.get("email");
-  }
+
 
   get PasswordValid(){
     return this.Password?.touched && !this.Password?.valid;
   }
 
-  get MailValid() {
-    return this.Mail?.touched && !this.Mail?.valid;
-  }
  
 
   onEnviar(event: Event){
@@ -57,5 +63,22 @@ export class loginComponent  implements OnInit {
     }
  
   }
-
+  onLogin(): void{
+    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
+    this.authService.login(this.loginUsuario).subscribe(data =>{
+        this.isLogged = true;
+        this.isLogginFail = false;
+        this.tokenService.setToken(data.token);
+        this.tokenService.setUserName(data.nombreUsuario);
+        this.tokenService.setAuthorities(data.authorities);
+        this.roles = data.authorities;
+        this.router.navigateByUrl('/index')
+      }, err =>{
+        this.isLogged = false;
+        this.isLogginFail = true;
+        this.errMsj = err.error.mensaje;
+        console.log(this.errMsj);
+        
+      })
+  }
 }

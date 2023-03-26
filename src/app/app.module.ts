@@ -16,8 +16,6 @@ import { BarraNavegacionComponent } from './COMPONENTES/barra-navegacion/barra-n
 import { RedesComponent } from './COMPONENTES/barra-navegacion/redes/redes.component';
 import { ErrorComponent } from './error/error.component';
 import { IndexComponent } from './index/index.component';
-import { BarraNavegacionAdminhtmlComponent } from './COMPONENTES/barra-navegacion-adminhtml/barra-navegacion-adminhtml.component';
-import { AdminComponent } from './admin/admin.component';
 import { ModalesComponent } from './COMPONENTES/modales/modales.component';
 import { ModalSobremiComponent } from './COMPONENTES/modales/modal-sobremi/modal-sobremi.component';
 import { ModalBannerComponent } from './COMPONENTES/modales/modal-banner/modal-banner.component';
@@ -53,8 +51,6 @@ import { loginComponent } from './COMPONENTES/login/login.component';
     RedesComponent,
     ErrorComponent,
     IndexComponent,
-    BarraNavegacionAdminhtmlComponent,
-    AdminComponent,
     ModalesComponent,
     ModalSobremiComponent,
     ModalBannerComponent,

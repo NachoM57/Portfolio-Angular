@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Proyectos } from 'src/app/model/proyectos';
 import { ProyectosService } from 'src/app/service/proyectos.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-agregar-proyecto',
@@ -20,8 +21,8 @@ inicio: '',
 fin: '',
 }
 enviado = false;
-
-constructor(private sProyecto:ProyectosService, public router: Router, private formbuilder:FormBuilder){
+isLogged=false;
+constructor(private sProyecto:ProyectosService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
   this.form = this.formbuilder.group({
 imagen: [''],
 titulo: [''],
@@ -32,6 +33,11 @@ fin: [''],
 }
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged= true;
+    } else {
+      this.isLogged = false;
+    }
     }
 
     onCreate(): void{

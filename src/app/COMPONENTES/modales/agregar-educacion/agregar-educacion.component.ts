@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Estudios } from 'src/app/model/estudios';
 import { EstudiosService } from 'src/app/service/estudios.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-agregar-educacion',
@@ -20,8 +21,8 @@ fin: '',
 descripcion: '',
 }
 enviado = false;
-
-constructor(private sEstudio:EstudiosService, public router: Router, private formbuilder:FormBuilder){
+isLogged=false;
+constructor(private sEstudio:EstudiosService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
   this.form = this.formbuilder.group({
 estudio: [''],
 lugar: [''],
@@ -32,6 +33,11 @@ descripcion: [''],
 }
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged= true;
+    } else {
+      this.isLogged = false;
+    }
     }
 
     onCreate(): void{
