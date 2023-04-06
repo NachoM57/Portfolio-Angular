@@ -17,6 +17,13 @@
       </div>
       <div class="mb-3">
         <div class="form group">
+          <label for="link" class="form-label">URL</label>
+          <input class="form-control form-control-sm" id="link" formControlName="link" type="text"
+            [(ngModel)]="proyectos.link">
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form group">
           <label for="descripcion" class="form-label">Descripcion</label>
           <input class="form-control form-control-sm" id="descripcion" formControlName="descripcion" type="text"
             [(ngModel)]="proyectos.descripcion">

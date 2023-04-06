@@ -16,6 +16,7 @@ export class AgregarProyectoComponent implements OnInit{
 
 imagen: '',
 titulo: '',
+link: '',
 descripcion: '',
 inicio: '',
 fin: '',
@@ -26,6 +27,7 @@ constructor(private sProyecto:ProyectosService, public router: Router, private f
   this.form = this.formbuilder.group({
 imagen: [''],
 titulo: [''],
+link: [''],
 descripcion: [''],
 inicio: [''],
 fin: [''],
@@ -44,6 +46,7 @@ fin: [''],
 const data = {
   imagen: this.proyecto.imagen,
   titulo: this.proyecto.titulo,
+  link: this.proyecto.link,
   descripcion: this.proyecto.descripcion,
   inicio: this.proyecto.inicio,
   fin: this.proyecto.fin,

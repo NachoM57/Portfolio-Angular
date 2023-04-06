@@ -20,6 +20,7 @@ export class ModalProyectosComponent implements OnInit {
      this.form = this.formBuilder.group({
        imagen:[''],
        titulo:[''],
+       link:[''],
        descripcion:[''],
        inicio:[''],
        fin:[''],

@@ -1,4 +1,5 @@
 <footer>
+
     <div class="container">
         <div class="row">
             <h2>Contacto</h2>
@@ -6,19 +7,19 @@
         <div class="row input-container" *ngFor="let Email of email">
             <div class="col-xs-12 col-md-6">
                 <div class="styled-input wide">
-                    <input type="text" required />
+                    <input type="text">
                     <label>{{Email.nombre}}</label>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="styled-input">
-                    <input type="text" required />
+                    <input type="text">
                     <label>{{Email.email}}</label>
                 </div>
             </div>
             <div class="col-xs-12">
                 <div class="styled-input wide">
-                    <textarea required></textarea>
+                    <textarea></textarea>
                     <label>{{Email.mensaje}}</label>
                 </div>
             </div>
@@ -27,6 +28,7 @@
             </div>
         </div>
     </div>
+
 </footer>
 <div class="col-md-12 text-center">
  <p>© Copyright Ignacio Maiorino 2023.</p>
