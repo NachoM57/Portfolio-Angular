@@ -1,10 +1,5 @@
-.fa-solid.fa-pencil.fa-xl {
-  margin-left: 30%;
-  padding: 1%;
-}
-
-.fa-solid.fa-xmark.fa-xl {
-  margin-top: 1%;
+.fa-solid.fa-xmark.fa-xl{
+  margin-left: 10%;
 }
 .container{
   display: flex;
