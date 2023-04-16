@@ -1,8 +1,8 @@
 <!--proyectos-->
 <h1 class="text-center mt-0">Proyectos</h1>
 <hr class="divider" />
-<div class="container">
 <app-agregar-proyecto></app-agregar-proyecto>
+<div class="container">
 <div class="row">
   <div class="card g-0" style="width: 20rem;" *ngFor="let Proyectos of proyec">
     <a href="{{Proyectos.link}}"><img src="{{Proyectos.imagen}}" class="card-img-top" type="button" alt="..."></a>
@@ -10,11 +10,11 @@
       <h2>{{Proyectos.titulo}}</h2>
       <p>{{Proyectos.descripcion}}</p>
       <p>{{Proyectos.inicio}} {{Proyectos.fin}}</p>
+      <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
+      routerLink="/editProyecto/{{Proyectos.id}}"></i>
+    <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
+      (click)="borrar(Proyectos.id)"></i>
     </div>
-  <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
-    routerLink="/editProyecto/{{Proyectos.id}}"></i>
-  <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
-    (click)="borrar(Proyectos.id)"></i>
 </div>
 </div>
 </div>
