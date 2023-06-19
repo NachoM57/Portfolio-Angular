@@ -41,3 +41,11 @@ ul.timeline>li:before {
   margin-left: 20%;
   padding: 5%;
 }
+
+
+
+hr.divider {
+  height: 2px;
+  width: 50%;
+  margin: 0 auto;
+}

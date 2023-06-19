@@ -485,3 +485,11 @@ h4 {
 .row{
   margin-left: 5%;
 }
+
+
+
+hr.divider {
+  height: 2px;
+  width: 50%;
+  margin: 0 auto;
+}

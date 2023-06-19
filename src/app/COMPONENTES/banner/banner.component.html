@@ -1,18 +1,31 @@
 <!--Banner-->
 
-<section id="banner" *ngFor="let Banner of banner">
-  <div class="d-flex align-items-center d-block w-100" height="900"
-    [style.backgroundImage]="'url(' + Banner.imagenbanner + ')'" [style.backgroundSize]="'cover'">
-    <div class=" col col-7">
-      <br>
-      <h1>{{Banner.nombrebanner}}</h1>
-      <h3>{{Banner.titulobanner}}</h3>
-    </div>
-  </div>
-  <div class="edicion">
-    <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
-      routerLink="/editBanner/{{Banner.id}}"></i>
-  </div>
-</section>
 
 <!--fin de banner-->
+
+
+
+<div class="menu-wrap">
+  <input type="checkbox" class="toggler">
+  <div class="hamburger"><div></div></div>
+  <div class="menu">
+    <div>
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Merch</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="showcase">
+  <div class="col container showcase-inner">
+    <h1>Bienvenido</h1>
+    <p>Ignacio Maiorino - Desarrollador Web</p>
+    <a href="http://Youtube.com/c/ZaidIrfanKhan" target="_blank" class="btnn">Contacteme!</a>
+  </div>
+</header>

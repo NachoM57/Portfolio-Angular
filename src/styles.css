@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
 body{
-    background-color: rgb(246, 248, 255);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     margin: 0;
     font-family: 'Lato', sans-serif
@@ -32,17 +35,17 @@ h1{
 .fa-regular.fa-plus.fa-xl,
  .fa-solid.fa-pencil.fa-xl, 
  .fa-solid.fa-xmark.fa-xl{
-    color: rgb(0, 0, 0);
+    color: rgb(54, 54, 54);
 }
 
 .fa-regular.fa-plus.fa-xl:hover{
-color: rgb(205, 215, 23);
+color: rgb(0, 0, 0);
 }
  .fa-solid.fa-pencil.fa-xl:hover{
-color: rgb(205, 215, 23);
+color: rgb(0, 0, 0);
  }
  .fa-solid.fa-xmark.fa-xl:hover{
-    color: rgb(205, 215, 23);
+    color: rgb(0, 0, 0);
 }
 
 
