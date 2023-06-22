@@ -1,13 +1,13 @@
 export class Email {
     id?: number;
-    nombre: string;
+    name: string;
     email: string;
-    mensaje: string;
+    message: string
 
-
-    constructor(nombre: string, email: string, mensaje: string) {
-        this.nombre = nombre;
+    constructor(name:string, email:string, message:string){
+        this.name = name;
         this.email = email;
-        this.mensaje = mensaje;
+        this.message = message;
     }
+
 }

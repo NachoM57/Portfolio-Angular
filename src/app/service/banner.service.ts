@@ -2,12 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Banner } from '../model/banner';
+import {environment} from 'src/environments/environment';
+
+const urlBase = environment.apiURL;
 
 @Injectable({
   providedIn: 'root'
 })
 export class BannerService {
-banURL = 'https://backendnacho.onrender.com/banner'
+banURL = `${urlBase}/banner`;
   
   constructor(private http: HttpClient) { }
 

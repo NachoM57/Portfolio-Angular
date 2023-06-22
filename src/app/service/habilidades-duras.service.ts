@@ -2,12 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HabilidadesDuras } from '../model/habilidades-duras';
+import {environment} from 'src/environments/environment';
+
+const urlBase = environment.apiURL;
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class HabilidadesDurasService {
-  habURL = 'https://backendnacho.onrender.com/habilidaddura'
+  habURL = `${urlBase}/habilidaddura`;
   
   constructor(private http: HttpClient) { }
 

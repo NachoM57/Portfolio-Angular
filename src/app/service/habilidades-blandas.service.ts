@@ -2,12 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HabilidadesBlandas } from '../model/habilidades-blandas';
+import {environment} from 'src/environments/environment';
+
+const urlBase = environment.apiURL;
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class HabilidadesBlandasService {
-  habiURL = 'https://backendnacho.onrender.com/habilidadblanda'
+  habiURL = `${urlBase}/habilidadblanda`;
   
   constructor(private http: HttpClient) { }
 

@@ -3,29 +3,31 @@
         <div class="row">
             <h2>Contacto</h2>
         </div>
-        <div class="row input-container" *ngFor="let Email of email">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="row input-container"> 
             <div class="col-xs-12 col-md-6">
                 <div class="styled-input wide">
-                    <input type="text">
-                    <label>{{Email.nombre}}</label>
+                    <input type="text" class="form-control" id="name" name="name"  placeholder="Nombre" formControlName="name" required/>
+                    <label for="name"></label>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="styled-input">
-                    <input type="text">
-                    <label>{{Email.email}}</label>
+                    <input type="text" class="form-control" id="email" name="email"  placeholder="email" formControlName="email" required/>
+                    <label for="email"></label>
                 </div>
             </div>
             <div class="col-xs-12">
                 <div class="styled-input wide">
-                    <textarea></textarea>
-                    <label>{{Email.mensaje}}</label>
+                    <textarea class="form-control" id="message" name="message"  placeholder="message" formControlName="message" required></textarea>
+                    <label for="message"></label>
                 </div>
             </div>
             <div class="col-xs-12">
                 <div class="btn-lrg submit-btn">Enviar mensaje</div>
             </div>
         </div>
+    </form>
 
         <!-- Segunda parte del footer -->
         <footer class="site-footer">
