@@ -17,9 +17,9 @@ export class FooterComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder, private contactFormService: EmailService) {
     this.contactForm = this.formBuilder.group({ // añade estas líneas
-      nombre: ['', Validators.required],
+      name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      mensaje: ['', Validators.required]
+      message: ['', Validators.required]
     });
    }
 
@@ -27,21 +27,27 @@ export class FooterComponent implements OnInit {
   }
 
   public enviarEmail() {
-    if (this.contactForm.valid) { // verifica que el formulario es válido antes de enviar
-      this.email = this.contactForm.value; // asigna los valores del formulario a tu objeto 'mail'
-      console.log(this.email); // añade esta línea
+    if (this.contactForm.valid) {
+      this.email = this.contactForm.value;
+      console.log('Enviando email', this.email);
       this.contactFormService.sendContactForm(this.email)
         .subscribe(data => {
           console.log(data);
           alert("Email enviado correctamente. Me pondré en contacto pronto!")
           window.location.reload();
+        }, error => {
+          console.error('Error enviando el email', error);
         });
+    } else {
+      console.log('Formulario inválido');
     }
   }
+  
   
     
 
   public onSubmit() {
+    console.log('Formulario enviado');
     this.enviarEmail();
   }
   }   

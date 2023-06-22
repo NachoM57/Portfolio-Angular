@@ -10,7 +10,7 @@ const urlBase = environment.apiURL;
   providedIn: 'root'
 })
 export class PersonaService {
-URL = `${urlBase}/habilidaddura`;
+URL = `${urlBase}/persona`;
   
   constructor(private http: HttpClient) { }
 

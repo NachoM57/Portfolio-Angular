@@ -10,7 +10,7 @@ const urlBase = environment.apiURL;
   providedIn: 'root'
 })
 export class EstudiosService {
-  estURL = `${urlBase}/estudios`;
+  estURL = `${urlBase}/estudio`;
   
   constructor(private httpclient: HttpClient) { }
 
