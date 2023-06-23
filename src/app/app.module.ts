@@ -32,6 +32,10 @@ import { AgregarHabilidadDComponent } from './COMPONENTES/modales/agregar-habili
 import { AgregarHabilidadBComponent } from './COMPONENTES/modales/agregar-habilidad-b/agregar-habilidad-b.component';
 import { AgregarProyectoComponent } from './COMPONENTES/modales/agregar-proyecto/agregar-proyecto.component';
 import { loginComponent } from './COMPONENTES/login/login.component';
+import { environment } from 'src/environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { NgxEditorModule } from 'ngx-editor';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 
 
 
@@ -67,6 +71,7 @@ import { loginComponent } from './COMPONENTES/login/login.component';
     AgregarProyectoComponent,
     loginComponent,
     
+    
     ],
   imports: [
     BrowserModule,
@@ -74,8 +79,8 @@ import { loginComponent } from './COMPONENTES/login/login.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-  
-
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [],
   bootstrap: [AppComponent]
