@@ -6,14 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent {
-  //codigo para volver arriba
-scrolltoElement(selector:any){
-const element=
-document.querySelector(selector)
-element ?
-element.scrollIntoView({behavior:"smooth"}):null;
-
-}
 
 
 }
