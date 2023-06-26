@@ -8,5 +8,5 @@ export const environment = {
         appId: "1:647617880946:web:b9ad5bff60a42d7623f3eb"
     },
     production: true,
-    apiURL: 'https://backendnacho.onrender.com' //modo produccion ng build
+    apiURL: 'https://protecto-nacho.wn.r.appspot.com' //modo produccion ng build
 }
