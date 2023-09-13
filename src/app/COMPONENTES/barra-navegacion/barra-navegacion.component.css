@@ -3,6 +3,6 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.navbar.navbar-expand-lg.bg-primary {
+.navbar.navbar-expand-lg {
     background-color: rgb(186, 185, 252) !important;
 }

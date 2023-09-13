@@ -34,7 +34,6 @@ import { AgregarProyectoComponent } from './COMPONENTES/modales/agregar-proyecto
 import { loginComponent } from './COMPONENTES/login/login.component';
 import { environment } from 'src/environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { NgxEditorModule } from 'ngx-editor';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 
 

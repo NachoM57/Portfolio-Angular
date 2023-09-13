@@ -3,19 +3,27 @@
 <hr class="divider" />
 <app-agregar-proyecto></app-agregar-proyecto>
 <div class="container">
-<div class="row">
-  <div class="card g-0" style="width: 20rem;" *ngFor="let Proyectos of proyec">
-    <a href="{{Proyectos.link}}" target="_blank"><img src="{{Proyectos.imagen}}" class="card-img-top" type="button" alt="..."></a>
-    <div class="card-body">
-      <h2>{{Proyectos.titulo}}</h2>
-      <p>{{Proyectos.descripcion}}</p>
-      <p>{{Proyectos.inicio}} {{Proyectos.fin}}</p>
-      <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
-      routerLink="/editProyecto/{{Proyectos.id}}"></i>
-    <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
-      (click)="borrar(Proyectos.id)"></i>
+  <div class="row  d-flex justify-content-center">
+    <div class="card" *ngFor="let Proyectos of proyec">
+      <div class="face front">
+        <img src="{{Proyectos.imagen}}" alt="">
+        <h3>{{Proyectos.titulo}}</h3>
+      </div>
+      <div class="face back">
+        <h3>{{Proyectos.titulo}}</h3>
+        <p>{{Proyectos.descripcion}}</p>
+        <p>{{Proyectos.inicio}}-{{Proyectos.fin}}</p>
+        <div class="iconos">
+          <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
+          routerLink="/editProyecto/{{Proyectos.id}}"></i>
+        <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(Proyectos.id)"></i>
+      </div>
+        <div class="link">
+          <a href="{{Proyectos.link}}">{{Proyectos.link}}</a>
+      </div>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-</div>
+
 <br> <br> <br>

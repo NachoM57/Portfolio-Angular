@@ -6,24 +6,13 @@
     color: #000000;
   }
 
-  .fa-brands.fa-facebook.fa-2xl:hover {
-    color: #0000ff;
-  }
 
-  .fa-brands.fa-instagram.fa-2xl:hover {
-    color: #d50adc;
-  }
-
-  .fa-brands.fa-github.fa-2xl:hover {
-    color: #e1e1e1;
-  }
-
-  .fa-solid.fa-user-lock.fa-2xl:hover {
-    color: #31a6ff;
-  }
-
+  .fa-brands.fa-facebook.fa-2xl:hover,
+  .fa-brands.fa-instagram.fa-2xl:hover,
+  .fa-brands.fa-github.fa-2xl:hover,
+  .fa-solid.fa-user-lock.fa-2xl:hover,
   .fa-solid.fa-arrow-right-from-bracket.fa-xl.p-2:hover {
-    color: #31a6ff;
+    color: #8b8bff;
   }
 
 
