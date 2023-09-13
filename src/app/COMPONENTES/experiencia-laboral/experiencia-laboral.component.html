@@ -10,13 +10,13 @@
           <ul class="timeline">
             <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
               routerLink="/editExperiencia/{{Experiencias.id}}"></i>
-            <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
-              (click)="borrar(Experiencias.id)"></i>
+            <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(Experiencias.id)"></i>
             <li>
               <h3>{{Experiencias.puesto}}</h3>
               <p>{{Experiencias.lugar}}.
                 <br> <br>
-                 {{Experiencias.inicio}} - {{Experiencias.fin}} </p>
+                {{Experiencias.inicio}} - {{Experiencias.fin}}
+              </p>
             </li>
           </ul>
         </div>

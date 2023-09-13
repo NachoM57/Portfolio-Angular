@@ -12,7 +12,7 @@
       <div class="face back">
         <h3>{{Proyectos.titulo}}</h3>
         <p>{{Proyectos.descripcion}}</p>
-        <p>{{Proyectos.inicio}}-{{Proyectos.fin}}</p>
+        <p>{{Proyectos.inicio}}{{Proyectos.fin}}</p>
         <div class="iconos">
           <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
           routerLink="/editProyecto/{{Proyectos.id}}"></i>
