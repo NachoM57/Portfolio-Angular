@@ -22,8 +22,6 @@ export class ModalProyectosComponent implements OnInit {
        titulo:[''],
        link:[''],
        descripcion:[''],
-       inicio:[''],
-       fin:[''],
      })
  
     }

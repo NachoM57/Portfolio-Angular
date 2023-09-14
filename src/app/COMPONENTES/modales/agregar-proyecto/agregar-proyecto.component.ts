@@ -18,8 +18,7 @@ imagen: '',
 titulo: '',
 link: '',
 descripcion: '',
-inicio: '',
-fin: '',
+
 }
 enviado = false;
 isLogged=false;
@@ -29,8 +28,6 @@ imagen: [''],
 titulo: [''],
 link: [''],
 descripcion: [''],
-inicio: [''],
-fin: [''],
   })
 }
 
@@ -48,8 +45,7 @@ const data = {
   titulo: this.proyecto.titulo,
   link: this.proyecto.link,
   descripcion: this.proyecto.descripcion,
-  inicio: this.proyecto.inicio,
-  fin: this.proyecto.fin,
+
 };
 this.sProyecto.crear(data).subscribe({
   next:(res) =>{

@@ -1,22 +1,20 @@
-  .fa-brands.fa-facebook.fa-2xl,
-  .fa-brands.fa-instagram.fa-2xl,
-  .fa-brands.fa-github.fa-2xl,
-  .fa-solid.fa-user-lock.fa-2xl,
-  .fa-solid.fa-arrow-right-from-bracket.fa-xl.p-2 {
-    color: #000000;
-  }
+.fa-brands.fa-github.fa-2xl,
+.fa-brands.fa-linkedin.fa-2xl,
+.fa-solid.fa-user-lock.fa-2xl,
+.fa-solid.fa-arrow-right-from-bracket.fa-xl.p-2 {
+  color: #000000;
+}
 
 
-  .fa-brands.fa-facebook.fa-2xl:hover,
-  .fa-brands.fa-instagram.fa-2xl:hover,
-  .fa-brands.fa-github.fa-2xl:hover,
-  .fa-solid.fa-user-lock.fa-2xl:hover,
-  .fa-solid.fa-arrow-right-from-bracket.fa-xl.p-2:hover {
-    color: #8b8bff;
-  }
+.fa-brands.fa-linkedin.fa-2xl:hover,
+.fa-brands.fa-github.fa-2xl:hover,
+.fa-solid.fa-user-lock.fa-2xl:hover,
+.fa-solid.fa-arrow-right-from-bracket.fa-xl.p-2:hover {
+  color: #8b8bff;
+}
 
 
-  .list-group.list-group-horizontal {
-    --bs-list-group-bg: transparent;
-    --bs-list-group-border-width: transparent;
-  }
+.list-group.list-group-horizontal {
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-width: transparent;
+}

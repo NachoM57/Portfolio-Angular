@@ -29,20 +29,6 @@
             [(ngModel)]="proyectos.descripcion">
         </div>
       </div>
-      <div class="mb-3">
-        <div class="form group">
-          <label for="inicio" class="form-label">Inicio</label>
-          <input class="form-control form-control-sm" id="inicio" formControlName="inicio" type="text"
-            [(ngModel)]="proyectos.inicio">
-        </div>
-      </div>
-      <div class="mb-3">
-        <div class="form group">
-          <label for="fin" class="form-label">Fin</label>
-          <input class="form-control form-control-sm" id="fin" formControlName="fin" type="text"
-            [(ngModel)]="proyectos.fin">
-        </div>
-      </div>
       <button type="button" class="btn btn-secondary" (click)="volver($event)">Cerrar</button>
       <button type="submit" class="btn btn-primary" (click)="onEnviar($event)">Actualizar</button>
     </form>
