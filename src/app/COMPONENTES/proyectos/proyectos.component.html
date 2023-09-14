@@ -2,8 +2,8 @@
 <h1 class="text-center mt-0">Proyectos</h1>
 <hr class="divider" />
 <app-agregar-proyecto></app-agregar-proyecto>
-<div class="container">
-  <div class="row  d-flex justify-content-center">
+<div class="container  d-flex justify-content-center">
+  <div class="row">
     <div class="card" *ngFor="let Proyectos of proyec">
       <div class="face front">
         <img src="{{Proyectos.imagen}}" alt="">
@@ -12,7 +12,7 @@
       <div class="face back">
         <h3>{{Proyectos.titulo}}</h3>
         <p>{{Proyectos.descripcion}}</p>
-        <p>{{Proyectos.inicio}}{{Proyectos.fin}}</p>
+        <p>{{Proyectos.inicio}}-{{Proyectos.fin}}</p>
         <div class="iconos">
           <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
           routerLink="/editProyecto/{{Proyectos.id}}"></i>

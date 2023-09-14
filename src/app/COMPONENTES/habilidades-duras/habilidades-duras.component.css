@@ -15,7 +15,6 @@ h4 {
 
 .progress-circle {
   position: relative;
-  display: inline-block;
   margin-left: 20%;
   width: 120px;
   height: 120px;
@@ -478,9 +477,7 @@ h4 {
 }
 
 
-.container {
-  padding: 2%;
-}
+
 
 .row{
   margin-left: 5%;
