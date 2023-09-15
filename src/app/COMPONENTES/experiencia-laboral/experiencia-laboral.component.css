@@ -1,8 +1,13 @@
+.col-lg-6 {
+  margin-bottom: 40px;
+}
+
+
 /*experiencia laboral*/
 ul.timeline {
   list-style-type: none;
   position: relative;
-  width: 50%;
+  width: 80%;
   /* ancho del div */
   margin: 0 auto;
 }
@@ -29,7 +34,7 @@ ul.timeline>li:before {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #6361ff;
+  border: 3px solid #bab9fc;
   left: 20px;
   width: 20px;
   height: 20px;

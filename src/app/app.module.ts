@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { ProyectosComponent } from './COMPONENTES/proyectos/proyectos.component';
 import { HabilidadesBlandasComponent } from './COMPONENTES/habilidades-blandas/habilidades-blandas.component';
 import { HabilidadesDurasComponent } from './COMPONENTES/habilidades-duras/habilidades-duras.component';
-import { EducacionComponent } from './COMPONENTES/educacion/educacion.component';
 import { ExperienciaLaboralComponent } from './COMPONENTES/experiencia-laboral/experiencia-laboral.component';
 import { SobreMiComponent } from './COMPONENTES/sobre-mi/sobre-mi.component';
 import { BannerComponent } from './COMPONENTES/banner/banner.component';
@@ -33,8 +32,8 @@ import { AgregarHabilidadBComponent } from './COMPONENTES/modales/agregar-habili
 import { AgregarProyectoComponent } from './COMPONENTES/modales/agregar-proyecto/agregar-proyecto.component';
 import { loginComponent } from './COMPONENTES/login/login.component';
 import { environment } from 'src/environments/environment';
-import { provideStorage,getStorage } from '@angular/fire/storage';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideStorage, getStorage } from '@angular/fire/storage';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 
 
 
@@ -46,7 +45,6 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
     ProyectosComponent,
     HabilidadesBlandasComponent,
     HabilidadesDurasComponent,
-    EducacionComponent,
     ExperienciaLaboralComponent,
     SobreMiComponent,
     BannerComponent,
@@ -69,9 +67,9 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
     AgregarHabilidadBComponent,
     AgregarProyectoComponent,
     loginComponent,
-    
-    
-    ],
+
+
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

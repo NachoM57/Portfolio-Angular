@@ -14,12 +14,12 @@
         <p>{{Proyectos.descripcion}}</p>
         <div class="iconos">
           <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
-          routerLink="/editProyecto/{{Proyectos.id}}"></i>
-        <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(Proyectos.id)"></i>
-      </div>
+            routerLink="/editProyecto/{{Proyectos.id}}"></i>
+          <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(Proyectos.id)"></i>
+        </div>
         <div class="link">
           <a href="{{Proyectos.link}}" target="_blank">{{Proyectos.link}}</a>
-      </div>
+        </div>
       </div>
     </div>
   </div>

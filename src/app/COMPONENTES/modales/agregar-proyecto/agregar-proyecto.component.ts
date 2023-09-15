@@ -10,56 +10,56 @@ import { TokenService } from 'src/app/service/token.service';
   templateUrl: './agregar-proyecto.component.html',
   styleUrls: ['./agregar-proyecto.component.css']
 })
-export class AgregarProyectoComponent implements OnInit{
+export class AgregarProyectoComponent implements OnInit {
   form: FormGroup;
   proyecto: Proyectos = {
 
-imagen: '',
-titulo: '',
-link: '',
-descripcion: '',
+    imagen: '',
+    titulo: '',
+    link: '',
+    descripcion: '',
 
-}
-enviado = false;
-isLogged=false;
-constructor(private sProyecto:ProyectosService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
-  this.form = this.formbuilder.group({
-imagen: [''],
-titulo: [''],
-link: [''],
-descripcion: [''],
-  })
-}
+  }
+  enviado = false;
+  isLogged = false;
+  constructor(private sProyecto: ProyectosService, public router: Router, private formbuilder: FormBuilder, private tokenService: TokenService) {
+    this.form = this.formbuilder.group({
+      imagen: [''],
+      titulo: [''],
+      link: [''],
+      descripcion: [''],
+    })
+  }
 
   ngOnInit(): void {
-    if(this.tokenService.getToken()){
-      this.isLogged= true;
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
     } else {
       this.isLogged = false;
     }
-    }
+  }
 
-    onCreate(): void{
-const data = {
-  imagen: this.proyecto.imagen,
-  titulo: this.proyecto.titulo,
-  link: this.proyecto.link,
-  descripcion: this.proyecto.descripcion,
+  onCreate(): void {
+    const data = {
+      imagen: this.proyecto.imagen,
+      titulo: this.proyecto.titulo,
+      link: this.proyecto.link,
+      descripcion: this.proyecto.descripcion,
 
-};
-this.sProyecto.crear(data).subscribe({
-  next:(res) =>{
-    console.log(res);
-    this.enviado = true;
-    window.location.reload();
-  },
-  error:(e) =>
-  window.location.reload()
-});
-}
+    };
+    this.sProyecto.crear(data).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.enviado = true;
+        window.location.reload();
+      },
+      error: (e) =>
+        window.location.reload()
+    });
+  }
 
-limpiar(): void{
-  this.form.reset();
-}
+  limpiar(): void {
+    this.form.reset();
+  }
 }
 

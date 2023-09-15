@@ -1,25 +1,23 @@
 <!--Habilidadesduras-->
-
 <section id="Habilidades duras" class="Habilidades duras">
   <h1 class="text-center mt-0">Habilidades Duras</h1>
   <hr class="divider" />
   <app-agregar-habilidad-d></app-agregar-habilidad-d>
   <div class="container-fluid">
-  <div class="progress-circle-container">
-    <div class="row">
-      <div class="col-md-3" *ngFor="let HabilidadesDuras of habilidadD">
-        <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
-          routerLink="/editHabilidadD/{{HabilidadesDuras.id}}"></i>
-        <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button"
-          (click)="borrar(HabilidadesDuras.id)"></i>
-        <h4>{{HabilidadesDuras.habilidad}}</h4>
-        <div class="progress-circle progress-{{HabilidadesDuras.porcentaje}}">
-          <span>{{HabilidadesDuras.porcentaje}}</span>
+    <div class="progress-circle-container">
+      <div class="row">
+        <div class="col-md-3" *ngFor="let HabilidadesDuras of habilidadD">
+          <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
+            routerLink="/editHabilidadD/{{HabilidadesDuras.id}}"></i>
+          <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(HabilidadesDuras.id)"></i>
+          <h4>{{HabilidadesDuras.habilidad}}</h4>
+          <div class="progress-circle progress-{{HabilidadesDuras.porcentaje}}">
+            <span>{{HabilidadesDuras.porcentaje}}</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 <!--fin habilidades duras-->
 <br> <br> <br> <br> <br> <br>

@@ -10,58 +10,58 @@ import { TokenService } from 'src/app/service/token.service';
   templateUrl: './agregar-educacion.component.html',
   styleUrls: ['./agregar-educacion.component.css']
 })
-export class AgregarEducacionComponent implements OnInit{
+export class AgregarEducacionComponent implements OnInit {
   form: FormGroup;
   estudio: Estudios = {
 
-estudio: '',
-lugar: '',
-inicio: '',
-fin: '',
-descripcion: '',
-}
-enviado = false;
-isLogged=false;
-constructor(private sEstudio:EstudiosService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
-  this.form = this.formbuilder.group({
-estudio: [''],
-lugar: [''],
-inicio: [''],
-fin: [''],
-descripcion: [''],
-  })
-}
+    estudio: '',
+    lugar: '',
+    inicio: '',
+    fin: '',
+    descripcion: '',
+  }
+  enviado = false;
+  isLogged = false;
+  constructor(private sEstudio: EstudiosService, public router: Router, private formbuilder: FormBuilder, private tokenService: TokenService) {
+    this.form = this.formbuilder.group({
+      estudio: [''],
+      lugar: [''],
+      inicio: [''],
+      fin: [''],
+      descripcion: [''],
+    })
+  }
 
   ngOnInit(): void {
-    if(this.tokenService.getToken()){
-      this.isLogged= true;
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
     } else {
       this.isLogged = false;
     }
-    }
+  }
 
-    onCreate(): void{
-const data = {
-  estudio: this.estudio.estudio,
-  lugar: this.estudio.lugar,
-  inicio: this.estudio.inicio,
-  fin: this.estudio.fin,
-  descripcion: this.estudio.descripcion,
-};
-this.sEstudio.crear(data).subscribe({
-  next:(res) =>{
-    console.log(res);
-    this.enviado = true;
-    window.location.reload();
-  },
-  error:(e) =>
-  window.location.reload()
-});
-}
+  onCreate(): void {
+    const data = {
+      estudio: this.estudio.estudio,
+      lugar: this.estudio.lugar,
+      inicio: this.estudio.inicio,
+      fin: this.estudio.fin,
+      descripcion: this.estudio.descripcion,
+    };
+    this.sEstudio.crear(data).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.enviado = true;
+        window.location.reload();
+      },
+      error: (e) =>
+        window.location.reload()
+    });
+  }
 
-limpiar(): void{
-  this.form.reset();
-}
+  limpiar(): void {
+    this.form.reset();
+  }
 }
 
 

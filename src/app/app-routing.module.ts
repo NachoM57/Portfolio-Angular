@@ -12,17 +12,17 @@ import { ErrorComponent } from './error/error.component';
 import { IndexComponent } from './index/index.component';
 
 const routes: Routes = [
-  {path:'index', component:IndexComponent},
-{path:'', redirectTo:'/index', pathMatch:'full'},
-{path:'editBanner/:id', component:ModalBannerComponent},
-{path:'editPersona/:id', component:ModalSobremiComponent},
-{path:'editExperiencia/:id', component:ModalExperiencialaboralComponent},
-{path:'editEstudio/:id', component:ModalEducacionComponent},
-{path:'editHabilidadD/:id', component:ModalHabilidadesdurasComponent},
-{path:'editHabilidadB/:id', component:ModalHabiliidadesblandasComponent},
-{path:'editProyecto/:id', component:ModalProyectosComponent},
-{path:'login', component:loginComponent},
-{path:'**', component:ErrorComponent}
+  { path: 'index', component: IndexComponent },
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  { path: 'editBanner/:id', component: ModalBannerComponent },
+  { path: 'editPersona/:id', component: ModalSobremiComponent },
+  { path: 'editExperiencia/:id', component: ModalExperiencialaboralComponent },
+  { path: 'editEstudio/:id', component: ModalEducacionComponent },
+  { path: 'editHabilidadD/:id', component: ModalHabilidadesdurasComponent },
+  { path: 'editHabilidadB/:id', component: ModalHabiliidadesblandasComponent },
+  { path: 'editProyecto/:id', component: ModalProyectosComponent },
+  { path: 'login', component: loginComponent },
+  { path: '**', component: ErrorComponent }
 
 
 ];

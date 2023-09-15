@@ -12,24 +12,24 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class BannerComponent implements OnInit {
   banner: Banner[] = [];
- isLogged=false;
+  isLogged = false;
 
-  constructor(private bannerService: BannerService,public router: Router, private tokenService: TokenService) {}
+  constructor(private bannerService: BannerService, public router: Router, private tokenService: TokenService) { }
 
- 
 
- ngOnInit(): void  {
- this.agregarBanner();
-     if(this.tokenService.getToken()){
-      this.isLogged= true;
+
+  ngOnInit(): void {
+    this.agregarBanner();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
     } else {
       this.isLogged = false;
     }
   }
 
-agregarBanner(): void{
-this.bannerService.lista().subscribe(data => {this.banner = data;})
-}
+  agregarBanner(): void {
+    this.bannerService.lista().subscribe(data => { this.banner = data; })
+  }
 
 
 

@@ -11,36 +11,36 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class HabilidadesBlandasComponent implements OnInit {
   habilidadB: HabilidadesBlandas[] = [];
-  isLogged=false;
-  constructor(private habilidadesblandasService: HabilidadesBlandasService,public router: Router, private tokenService: TokenService) {}
+  isLogged = false;
+  constructor(private habilidadesblandasService: HabilidadesBlandasService, public router: Router, private tokenService: TokenService) { }
 
- 
 
- ngOnInit(): void  {
- this.agregarHabilidadesBlandas();
- if(this.tokenService.getToken()){
-  this.isLogged= true;
-} else {
-  this.isLogged = false;
-}
-}
 
-agregarHabilidadesBlandas(): void{
-this.habilidadesblandasService.lista().subscribe(data => {this.habilidadB = data;})
-}
-
-borrar(id:number){
-  if(id !=undefined){
-    this.habilidadesblandasService.borrar(id).subscribe(
-      data=>{
-        this.agregarHabilidadesBlandas();
-        window.location.reload();
-      }, err => {
-        window.location.reload();
-      }
-    )
+  ngOnInit(): void {
+    this.agregarHabilidadesBlandas();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
-}
+
+  agregarHabilidadesBlandas(): void {
+    this.habilidadesblandasService.lista().subscribe(data => { this.habilidadB = data; })
+  }
+
+  borrar(id: number) {
+    if (id != undefined) {
+      this.habilidadesblandasService.borrar(id).subscribe(
+        data => {
+          this.agregarHabilidadesBlandas();
+          window.location.reload();
+        }, err => {
+          window.location.reload();
+        }
+      )
+    }
+  }
 }
 
 

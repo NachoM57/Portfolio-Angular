@@ -1,129 +1,137 @@
 {
-    "imagenperfil": "",
-    "nombre": "Ignacio",
-    "apellido": "Maiorino",
-    "descripcion": "Hola bienvenido/a a mi portfolio, soy Ignacio tengo 24 años y vivo en la provincia de Cordoba. Soy un programador Junior con muchas ganas de aprender y lograr cumplir con los objetivos personales. Me gustan los desafios y la programacion fue uno de ellos, me encantaria trabajar con vos ! te dejo un formulario en la seccion de Contacto para que podamos hablar.",
-    "imagenproyecto": "../assets/imagenes/imagen 2.webp",
-    "tituloproyecto": "Portfolio-Argentina Programa #YoProgramo",
-    "descripcionproyecto": "Proyecto final realizado durante el curso de Desarrollo Web Full Stack Jr Argentina Programa. Utilizando herramientas como HTML, CSS, ANGULAR, BOOSTRAP, JAVA y SPRING BOOT",
-    "imagenbanner": "https://res.cloudinary.com/ddqhcwp8j/image/upload/v1465835110/cup-of-coffee-1280537_1920_inrevw.jpg",
-    "titulobanner": "< Desarrolador Web />",
-    "nombrebanner": "Ignacio Maiorino",
-    
-
-     "experiencias": 
-[
-   { "id": 1,
-    "puesto": "Repositor de Mercaderia",
-    "lugar": "Supermercado El Delfin",
-    "inicio": "2016",
-    "fin": "2017"
+  "imagenperfil": "",
+  "nombre": "Ignacio",
+  "apellido": "Maiorino",
+  "descripcion": "Hola bienvenido/a a mi portfolio, soy Ignacio tengo 24 años y vivo en la provincia de Cordoba. Soy un programador Junior con muchas ganas de aprender y lograr cumplir con los objetivos personales. Me gustan los desafios y la programacion fue uno de ellos, me encantaria trabajar con vos ! te dejo un formulario en la seccion de Contacto para que podamos hablar.",
+  "imagenproyecto": "../assets/imagenes/imagen 2.webp",
+  "tituloproyecto": "Portfolio-Argentina Programa #YoProgramo",
+  "descripcionproyecto": "Proyecto final realizado durante el curso de Desarrollo Web Full Stack Jr Argentina Programa. Utilizando herramientas como HTML, CSS, ANGULAR, BOOSTRAP, JAVA y SPRING BOOT",
+  "imagenbanner": "https://res.cloudinary.com/ddqhcwp8j/image/upload/v1465835110/cup-of-coffee-1280537_1920_inrevw.jpg",
+  "titulobanner": "< Desarrolador Web />",
+  "nombrebanner": "Ignacio Maiorino",
+  "experiencias": [
+    {
+      "id": 1,
+      "puesto": "Repositor de Mercaderia",
+      "lugar": "Supermercado El Delfin",
+      "inicio": "2016",
+      "fin": "2017"
     },
-  {  "id": 2,
-    "puesto": "Vendedor, Repartidor y Promotor",
-    "lugar": "Distribuidora de Arcor Mario Chialvo srl",
-    "inicio": "2017",
-    "fin": "2022"
-     }
-],
-
-"estudios": 
-[
-   {  "id": 1,
-    "estudio": "Primario y Secundario",
-    "lugar": "Colegio Nuestra Señora Del Huerto,",
-    "inicio": "2003",
-    "fin": "2015",
-    "descripcion": "Bachiller con orientación en Ciencias Sociales y Humanidades."
-    },
-   {  "id": 2,
-    "estudio": "Argentina Programa",
-    "lugar": "",
-    "inicio": "2022",
-    "fin": "",
-    "descripcion": "#SeProgramar"
-   },
-   {  "id": 3,
-    "estudio": "Arbitraje de Criptomonedas",
-    "lugar": "",
-    "inicio": "2021",
-    "fin": "2022",
-    "descripcion": ""
-  },
-  {  "id": 4,
-    "estudio": "Argentina Programa 2.0",
-    "lugar": "",
-    "inicio": "2022",
-    "fin": "2023",
-    "descripcion": "#YoProgramo, programador Full Stack Jr"
-  }
- ],
-
- "habilidadesduras": 
- [
-  {  "id": 1,
-   "habilidad": "HTML5",
-   "porcentaje": "60"
-  },
-  {  "id": 2,
-   "habilidad":"CSS3",
-   "porcentaje": "40"
-  },
-  {  "id": 3,
-   "habilidad": "JAVA",
-   "porcentaje": "20"
-  },
-  {  "id": 4,
-   "habilidad": "MYSQL",
-   "porcentaje": "30"
-  },
-  {  "id": 5,
-  "habilidad": "BOOSTRAP",
-  "porcentaje": "40"
- },
- {  "id": 6,
- "habilidad": "ANGULAR",
- "porcentaje": "55"
-},
-{  "id": 7,
-"habilidad": "GIT-HUB",
-"porcentaje": "50"
-}
-
+    {
+      "id": 2,
+      "puesto": "Vendedor, Repartidor y Promotor",
+      "lugar": "Distribuidora de Arcor Mario Chialvo srl",
+      "inicio": "2017",
+      "fin": "2022"
+    }
   ],
-
-  "habilidadesblandas": 
-  [
-   {  "id": 1,
-    "imagen": "https://i.ibb.co/WFk1jFb/022.jpg",
-    "titulo": "Creatividad",
-    "descripcion":"Me gusta pensar y crear cosas que me sirvan para progresar, ya sea en un proyecto de trabajo o en la vida. Creo que siendo creativo puedo tener distintas maneras de ver las cosas y buscar lo mas eficiente a la hora de tener problemas para solucionar."
-   },
-   {  "id":2,
-    "imagen": "../assets/imagenes/proactividad.jpg",
-    "titulo": "Pro Actividad",
-    "descripcion":"Ser proactivo para anticiparme lo que mas pueda ante los problemas que puedan surgir posteriormemte, lograr a dar con ello y no atrasarme con el trabajo que este realizando, buscarle la forma hasta encontrarle la vuelta."
-   },
-   {  "id": 3,
-    "imagen": "https://i.ibb.co/37jVH8t/mbr-13.jpg",
-    "titulo": "Adaptabilidad",
-    "descripcion":"adaptarse a un trabajo o a un grupo de persona siempre es una buena ventaja, el intercambio de ideas con personas nos da la seguridad de que aprendemos mas de lo que sabemos y nos ayuda a despejar ideas que tenemos y no logramos deducir por si solos. "
-   },
-   {  "id": 4,
-    "imagen": "../assets/imagenes/responsabilidad.webp",
-    "titulo": "Responsabilidad",
-    "descripcion":"Ser responsble es la habilidad blanda mas importante para mi, ya que la responsabilidad es la que nos  lleva por el buen camino y nos hace preouparnos por nuestro deber, logrando esforzarse cada dia mas y cumplir con nuestros objetivos."
-   },
-   {  "id": 5,
-   "imagen": "../assets/imagenes/productividad.webp",
-   "titulo": "Productividad Personal",
-   "descripcion":"Para mi productividad personal priorizo las tareas mas importantes y aprendo nuevos habilidades para aumentar la eficiencia en el trabajo y mejorar la calidad de trabajo, tambien es importante tener metas claras para mantener la motivacion y enfocarme en lo que quiero lograr."
-  },
-  {  "id": 6,
-  "imagen": "../assets/imagenes/colaboracion.jpg",
-  "titulo": "Colaboracion",
-  "descripcion":"Me gusta ayudar en lo que puedo a la gente y intercambiar ideas, siempre es mejor ayudar y ser ayudado para avanzar con un proyecto de trabajo. "
- }
-   ]
-
+  "estudios": [
+    {
+      "id": 1,
+      "estudio": "Primario y Secundario",
+      "lugar": "Colegio Nuestra Señora Del Huerto,",
+      "inicio": "2003",
+      "fin": "2015",
+      "descripcion": "Bachiller con orientación en Ciencias Sociales y Humanidades."
+    },
+    {
+      "id": 2,
+      "estudio": "Argentina Programa",
+      "lugar": "",
+      "inicio": "2022",
+      "fin": "",
+      "descripcion": "#SeProgramar"
+    },
+    {
+      "id": 3,
+      "estudio": "Arbitraje de Criptomonedas",
+      "lugar": "",
+      "inicio": "2021",
+      "fin": "2022",
+      "descripcion": ""
+    },
+    {
+      "id": 4,
+      "estudio": "Argentina Programa 2.0",
+      "lugar": "",
+      "inicio": "2022",
+      "fin": "2023",
+      "descripcion": "#YoProgramo, programador Full Stack Jr"
+    }
+  ],
+  "habilidadesduras": [
+    {
+      "id": 1,
+      "habilidad": "HTML5",
+      "porcentaje": "60"
+    },
+    {
+      "id": 2,
+      "habilidad": "CSS3",
+      "porcentaje": "40"
+    },
+    {
+      "id": 3,
+      "habilidad": "JAVA",
+      "porcentaje": "20"
+    },
+    {
+      "id": 4,
+      "habilidad": "MYSQL",
+      "porcentaje": "30"
+    },
+    {
+      "id": 5,
+      "habilidad": "BOOSTRAP",
+      "porcentaje": "40"
+    },
+    {
+      "id": 6,
+      "habilidad": "ANGULAR",
+      "porcentaje": "55"
+    },
+    {
+      "id": 7,
+      "habilidad": "GIT-HUB",
+      "porcentaje": "50"
+    }
+  ],
+  "habilidadesblandas": [
+    {
+      "id": 1,
+      "imagen": "https://i.ibb.co/WFk1jFb/022.jpg",
+      "titulo": "Creatividad",
+      "descripcion": "Me gusta pensar y crear cosas que me sirvan para progresar, ya sea en un proyecto de trabajo o en la vida. Creo que siendo creativo puedo tener distintas maneras de ver las cosas y buscar lo mas eficiente a la hora de tener problemas para solucionar."
+    },
+    {
+      "id": 2,
+      "imagen": "../assets/imagenes/proactividad.jpg",
+      "titulo": "Pro Actividad",
+      "descripcion": "Ser proactivo para anticiparme lo que mas pueda ante los problemas que puedan surgir posteriormemte, lograr a dar con ello y no atrasarme con el trabajo que este realizando, buscarle la forma hasta encontrarle la vuelta."
+    },
+    {
+      "id": 3,
+      "imagen": "https://i.ibb.co/37jVH8t/mbr-13.jpg",
+      "titulo": "Adaptabilidad",
+      "descripcion": "adaptarse a un trabajo o a un grupo de persona siempre es una buena ventaja, el intercambio de ideas con personas nos da la seguridad de que aprendemos mas de lo que sabemos y nos ayuda a despejar ideas que tenemos y no logramos deducir por si solos. "
+    },
+    {
+      "id": 4,
+      "imagen": "../assets/imagenes/responsabilidad.webp",
+      "titulo": "Responsabilidad",
+      "descripcion": "Ser responsble es la habilidad blanda mas importante para mi, ya que la responsabilidad es la que nos  lleva por el buen camino y nos hace preouparnos por nuestro deber, logrando esforzarse cada dia mas y cumplir con nuestros objetivos."
+    },
+    {
+      "id": 5,
+      "imagen": "../assets/imagenes/productividad.webp",
+      "titulo": "Productividad Personal",
+      "descripcion": "Para mi productividad personal priorizo las tareas mas importantes y aprendo nuevos habilidades para aumentar la eficiencia en el trabajo y mejorar la calidad de trabajo, tambien es importante tener metas claras para mantener la motivacion y enfocarme en lo que quiero lograr."
+    },
+    {
+      "id": 6,
+      "imagen": "../assets/imagenes/colaboracion.jpg",
+      "titulo": "Colaboracion",
+      "descripcion": "Me gusta ayudar en lo que puedo a la gente y intercambiar ideas, siempre es mejor ayudar y ser ayudado para avanzar con un proyecto de trabajo. "
+    }
+  ]
 }

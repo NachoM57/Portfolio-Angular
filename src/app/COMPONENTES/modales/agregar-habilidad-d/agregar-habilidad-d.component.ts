@@ -10,48 +10,48 @@ import { TokenService } from 'src/app/service/token.service';
   templateUrl: './agregar-habilidad-d.component.html',
   styleUrls: ['./agregar-habilidad-d.component.css']
 })
-export class AgregarHabilidadDComponent implements OnInit{
+export class AgregarHabilidadDComponent implements OnInit {
   form: FormGroup;
   habilidadD: HabilidadesDuras = {
 
-habilidad: '',
-porcentaje: '',
-}
-enviado = false;
-isLogged=false;
-constructor(private sHabilidadD:HabilidadesDurasService, public router: Router, private formbuilder:FormBuilder, private tokenService: TokenService){
-  this.form = this.formbuilder.group({
-habilidad: [''],
-porcentaje: [''],
-  })
-}
+    habilidad: '',
+    porcentaje: '',
+  }
+  enviado = false;
+  isLogged = false;
+  constructor(private sHabilidadD: HabilidadesDurasService, public router: Router, private formbuilder: FormBuilder, private tokenService: TokenService) {
+    this.form = this.formbuilder.group({
+      habilidad: [''],
+      porcentaje: [''],
+    })
+  }
 
   ngOnInit(): void {
-    if(this.tokenService.getToken()){
-      this.isLogged= true;
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
     } else {
       this.isLogged = false;
     }
-    }
+  }
 
-    onCreate(): void{
-const data = {
-  habilidad: this.habilidadD.habilidad,
-  porcentaje: this.habilidadD.porcentaje,
+  onCreate(): void {
+    const data = {
+      habilidad: this.habilidadD.habilidad,
+      porcentaje: this.habilidadD.porcentaje,
 
-};
-this.sHabilidadD.crear(data).subscribe({
-  next:(res) =>{
-    console.log(res);
-    this.enviado = true;
-    window.location.reload();
-  },
-  error:(e) =>
-  window.location.reload()
-});
-}
+    };
+    this.sHabilidadD.crear(data).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.enviado = true;
+        window.location.reload();
+      },
+      error: (e) =>
+        window.location.reload()
+    });
+  }
 
-limpiar(): void{
-  this.form.reset();
-}
+  limpiar(): void {
+    this.form.reset();
+  }
 }

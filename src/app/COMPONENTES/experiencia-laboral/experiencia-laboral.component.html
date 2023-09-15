@@ -1,29 +1,59 @@
-<!--Experiencia laboral-->
-<section id="Experiancia laboral" class="experiencia laboral">
-  <div class="col-12">
-    <h1 class="text-center mt-0">Experiencia Laboral</h1>
-    <hr class="divider" />
-    <app-agregar-experiencia></app-agregar-experiencia>
-    <div class="container mt-5 mb-5">
-      <div class="row">
-        <div class="col-md-6 offset-md-3" *ngFor="let Experiencias of expe">
-          <ul class="timeline">
-            <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
-              routerLink="/editExperiencia/{{Experiencias.id}}"></i>
-            <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(Experiencias.id)"></i>
-            <li>
-              <h3>{{Experiencias.puesto}}</h3>
-              <p>{{Experiencias.lugar}}.
-                <br> <br>
-                {{Experiencias.inicio}} - {{Experiencias.fin}}
-              </p>
-            </li>
-          </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1 class="text-center mt-0">Experiencia Laboral</h1>
+      <hr class="divider" />
+      <!--Experiencia laboral-->
+      <section id="Experiancia laboral" class="experiencia laboral">
+        <app-agregar-experiencia></app-agregar-experiencia>
+        <div class="container mt-5 mb-5">
+          <div class="row">
+            <div class="col-md-6 offset-md-3" *ngFor="let Experiencias of expe">
+              <ul class="timeline">
+                <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
+                  routerLink="/editExperiencia/{{Experiencias.id}}"></i>
+                <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(Experiencias.id)"></i>
+                <li>
+                  <h3>{{Experiencias.puesto}}</h3>
+                  <p>{{Experiencias.lugar}}.
+                    <br> <br>
+                    {{Experiencias.inicio}} - {{Experiencias.fin}}
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+    </div>
+
+
+    <div class="col-lg-6">
+      <!--Educacion-->
+      <section id="educacion" class="educacion">
+        <h1 class="text-center mt-0">Educación</h1>
+        <hr class="divider" />
+        <app-agregar-educacion></app-agregar-educacion>
+        <div class="container mt-5 mb-5">
+          <div class="row">
+            <div class="col-md-6 offset-md-3" *ngFor="let Estudios of estud">
+              <ul class="timeline">
+                <i class="fa-solid fa-pencil fa-xl" *ngIf="isLogged" type="button"
+                  routerLink="/editEstudio/{{Estudios.id}}"></i>
+                <i class="fa-solid fa-xmark fa-xl" *ngIf="isLogged" type="button" (click)="borrar(Estudios.id)"></i>
+                <li>
+                  <h3>{{Estudios.estudio}}</h3>
+                  <p>{{Estudios.lugar}}
+                    {{Estudios.descripcion}}</p>
+                  <p>{{Estudios.inicio}} - {{Estudios.fin}}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-</section>
-
+</div>
 <!--Fin experiencia laboral-->
 <div class="br1"><br> <br> <br></div>

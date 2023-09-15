@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HabilidadesDuras } from '../model/habilidades-duras';
-import {environment} from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 
 const urlBase = environment.apiURL;
 
@@ -12,29 +12,29 @@ const urlBase = environment.apiURL;
 })
 export class HabilidadesDurasService {
   habURL = `${urlBase}/habilidaddura`;
-  
+
   constructor(private http: HttpClient) { }
 
-  public lista(): Observable<HabilidadesDuras[]>{
-   return this.http.get<HabilidadesDuras[]>(this.habURL + '/ver');
- 
+  public lista(): Observable<HabilidadesDuras[]> {
+    return this.http.get<HabilidadesDuras[]>(this.habURL + '/ver');
+
   }
 
-  public buscar(id: number): Observable<HabilidadesDuras>{
+  public buscar(id: number): Observable<HabilidadesDuras> {
     return this.http.get<HabilidadesDuras>(this.habURL + `/buscar/${id}`)
   }
 
-  public crear(habilidad:HabilidadesDuras): Observable<any>{
-  return this.http.post<any>(this.habURL + '/nueva', habilidad);
-}
+  public crear(habilidad: HabilidadesDuras): Observable<any> {
+    return this.http.post<any>(this.habURL + '/nueva', habilidad);
+  }
 
 
-public editar(id: number, habilidad: HabilidadesDuras): Observable<any>{
-  return this.http.put<any>(this.habURL + `/editar/${id}`, habilidad);
-}
+  public editar(id: number, habilidad: HabilidadesDuras): Observable<any> {
+    return this.http.put<any>(this.habURL + `/editar/${id}`, habilidad);
+  }
 
-public borrar(id: number): Observable<any>{
-  return this.http.delete<any>(this.habURL + `/borrar/${id}`);
-}
+  public borrar(id: number): Observable<any> {
+    return this.http.delete<any>(this.habURL + `/borrar/${id}`);
+  }
 
 }

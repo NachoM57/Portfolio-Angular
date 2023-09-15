@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
-body{
+body {
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     margin: 0;
     font-family: 'Lato', sans-serif
 }
 
-h1{
+h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
@@ -18,34 +18,36 @@ h1{
     font-family: 'Montserrat', sans-serif
 }
 
-*{
-    box-sizing:border-box;
-}
- 
-h4,h3, h2{
-    font-family: 'Montserrat', sans-serif;
-    font-style:italic;
+* {
+    box-sizing: border-box;
 }
 
-h1{
+h4,
+h3,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+h1 {
     color: rgb(69, 159, 238);
 }
 
 
 .fa-regular.fa-plus.fa-xl,
- .fa-solid.fa-pencil.fa-xl, 
- .fa-solid.fa-xmark.fa-xl{
+.fa-solid.fa-pencil.fa-xl,
+.fa-solid.fa-xmark.fa-xl {
     color: rgb(54, 54, 54);
 }
 
-.fa-regular.fa-plus.fa-xl:hover{
-color: rgb(0, 0, 0);
-}
- .fa-solid.fa-pencil.fa-xl:hover{
-color: rgb(0, 0, 0);
- }
- .fa-solid.fa-xmark.fa-xl:hover{
+.fa-regular.fa-plus.fa-xl:hover {
     color: rgb(0, 0, 0);
 }
 
+.fa-solid.fa-pencil.fa-xl:hover {
+    color: rgb(0, 0, 0);
+}
 
+.fa-solid.fa-xmark.fa-xl:hover {
+    color: rgb(0, 0, 0);
+}

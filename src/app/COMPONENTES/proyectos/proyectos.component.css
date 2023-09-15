@@ -4,12 +4,17 @@ hr.divider {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .card {
+  margin-top: 40px;
   position: relative;
   width: 400px;
   height: 370px;
-  margin: 20px;
   border: none;
 }
 

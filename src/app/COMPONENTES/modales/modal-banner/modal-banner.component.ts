@@ -13,51 +13,51 @@ import { HttpClient } from '@angular/common/http'
 export class ModalBannerComponent implements OnInit {
   banner: Banner = null;
   form: UntypedFormGroup;
-  
- 
- 
-   constructor(public router: Router, private activatedRouter: ActivatedRoute, private bannerservice: BannerService, private formBuilder: UntypedFormBuilder, private httpCliente: HttpClient) {
-     this.form = this.formBuilder.group({
-       imagenbanner:[''],
-       nombrebanner:[''],
-       titulobanner:[''],
-     })
- 
+
+
+
+  constructor(public router: Router, private activatedRouter: ActivatedRoute, private bannerservice: BannerService, private formBuilder: UntypedFormBuilder, private httpCliente: HttpClient) {
+    this.form = this.formBuilder.group({
+      imagenbanner: [''],
+      nombrebanner: [''],
+      titulobanner: [''],
+    })
+
+  }
+
+  ngOnInit(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.bannerservice.buscar(id).subscribe(
+      data => {
+        this.banner = data;
+      })
+  }
+
+  onEditar(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.bannerservice.editar(id, this.banner).subscribe(
+      data => {
+        this.router.navigateByUrl('/index');
+      }, err => {
+        this.router.navigateByUrl('/index');
+      }
+    )
+  }
+
+
+  onEnviar(event: Event) {
+    event.preventDefault;
+    if (this.form.valid) {
+      alert("Todo salio bien ¡Enviar formuario!")
+    } else {
+      this.form.markAllAsTouched();
     }
- 
-   ngOnInit(): void {
-     const id = this.activatedRouter.snapshot.params['id'];
-     this.bannerservice.buscar(id).subscribe(
-       data =>{
-         this.banner = data;
-       })
-   }
- 
-   onEditar(): void{
-     const id = this.activatedRouter.snapshot.params['id'];
-     this.bannerservice.editar(id, this.banner).subscribe(
-       data=>{
-         this.router.navigateByUrl('/index');
-       }, err =>{
-         this.router.navigateByUrl('/index');
-       }
-     )
-   }
- 
-   
-   onEnviar(event: Event){
-     event.preventDefault; 
-    if (this.form.valid){
-       alert("Todo salio bien ¡Enviar formuario!")
-     }else{    
-       this.form.markAllAsTouched(); 
-     }
-   }
- 
-     volver(event:Event){
-       this.router.navigateByUrl('/index');
-     }
- 
- }
+  }
+
+  volver(event: Event) {
+    this.router.navigateByUrl('/index');
+  }
+
+}
 
 

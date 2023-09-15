@@ -11,37 +11,37 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class HabilidadesDurasComponent implements OnInit {
   habilidadD: HabilidadesDuras[] = [];
-  isLogged=false;
-  constructor(private habilidadesdurasService: HabilidadesDurasService,public router: Router, private tokenService: TokenService) {}
-
- 
-
- ngOnInit(): void  {
- this.agregarHabilidadesDuras();
- if(this.tokenService.getToken()){
-  this.isLogged= true;
-} else {
-  this.isLogged = false;
-}
-}
-
-agregarHabilidadesDuras(): void{
-this.habilidadesdurasService.lista().subscribe(data => {this.habilidadD = data;})
-}
+  isLogged = false;
+  constructor(private habilidadesdurasService: HabilidadesDurasService, public router: Router, private tokenService: TokenService) { }
 
 
-borrar(id:number){
-  if(id !=undefined){
-    this.habilidadesdurasService.borrar(id).subscribe(
-      data=>{
-        this.agregarHabilidadesDuras();
-        window.location.reload();
-      }, err => {
-        window.location.reload();
-      }
-    )
+
+  ngOnInit(): void {
+    this.agregarHabilidadesDuras();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
-}
+
+  agregarHabilidadesDuras(): void {
+    this.habilidadesdurasService.lista().subscribe(data => { this.habilidadD = data; })
+  }
+
+
+  borrar(id: number) {
+    if (id != undefined) {
+      this.habilidadesdurasService.borrar(id).subscribe(
+        data => {
+          this.agregarHabilidadesDuras();
+          window.location.reload();
+        }, err => {
+          window.location.reload();
+        }
+      )
+    }
+  }
 }
 
 

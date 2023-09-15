@@ -13,52 +13,52 @@ import { HttpClient } from '@angular/common/http'
 export class ModalProyectosComponent implements OnInit {
   proyectos: Proyectos = null;
   form: UntypedFormGroup;
-  
- 
- 
-   constructor(public router: Router, private activatedRouter: ActivatedRoute, private proyectosservice: ProyectosService, private formBuilder: UntypedFormBuilder, private httpCliente: HttpClient) {
-     this.form = this.formBuilder.group({
-       imagen:[''],
-       titulo:[''],
-       link:[''],
-       descripcion:[''],
-     })
- 
+
+
+
+  constructor(public router: Router, private activatedRouter: ActivatedRoute, private proyectosservice: ProyectosService, private formBuilder: UntypedFormBuilder, private httpCliente: HttpClient) {
+    this.form = this.formBuilder.group({
+      imagen: [''],
+      titulo: [''],
+      link: [''],
+      descripcion: [''],
+    })
+
+  }
+
+  ngOnInit(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.proyectosservice.buscar(id).subscribe(
+      data => {
+        this.proyectos = data;
+      })
+  }
+
+  onEditar(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.proyectosservice.editar(id, this.proyectos).subscribe(
+      data => {
+        this.router.navigateByUrl('/index');
+      }, err => {
+        this.router.navigateByUrl('/index');
+      }
+    )
+  }
+
+
+  onEnviar(event: Event) {
+    event.preventDefault;
+    if (this.form.valid) {
+      alert("Todo salio bien ¡Enviar formuario!")
+    } else {
+      this.form.markAllAsTouched();
     }
- 
-   ngOnInit(): void {
-     const id = this.activatedRouter.snapshot.params['id'];
-     this.proyectosservice.buscar(id).subscribe(
-       data =>{
-         this.proyectos = data;
-       })
-   }
- 
-   onEditar(): void{
-     const id = this.activatedRouter.snapshot.params['id'];
-     this.proyectosservice.editar(id, this.proyectos).subscribe(
-       data=>{
-         this.router.navigateByUrl('/index');
-       }, err =>{
-         this.router.navigateByUrl('/index');
-       }
-     )
-   }
- 
-   
-   onEnviar(event: Event){
-     event.preventDefault; 
-    if (this.form.valid){
-       alert("Todo salio bien ¡Enviar formuario!")
-     }else{    
-       this.form.markAllAsTouched(); 
-     }
-   }
- 
-     volver(event:Event){
-       this.router.navigateByUrl('/index');
-     }
- 
- }
+  }
+
+  volver(event: Event) {
+    this.router.navigateByUrl('/index');
+  }
+
+}
 
 

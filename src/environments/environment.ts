@@ -7,6 +7,6 @@ export const environment = {
         messagingSenderId: "647617880946",
         appId: "1:647617880946:web:b9ad5bff60a42d7623f3eb"
     },
-    production:false,
+    production: false,
     apiURL: 'http://localhost:8080' //modo desarrollo ng serve
 }

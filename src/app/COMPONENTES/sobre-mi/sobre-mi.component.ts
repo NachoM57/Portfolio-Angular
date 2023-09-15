@@ -12,24 +12,24 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class SobreMiComponent implements OnInit {
   perso: Persona[] = [];
-  isLogged=false;
+  isLogged = false;
 
-  constructor(private personaService: PersonaService,public router: Router, private tokenService: TokenService) {}
+  constructor(private personaService: PersonaService, public router: Router, private tokenService: TokenService) { }
 
- 
 
- ngOnInit(): void  {
- this.agregarPersona();
- if(this.tokenService.getToken()){
-  this.isLogged= true;
-} else {
-  this.isLogged = false;
-}
-}
 
-agregarPersona(): void{
-this.personaService.lista().subscribe(data => {this.perso = data;})
-}
+  ngOnInit(): void {
+    this.agregarPersona();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  agregarPersona(): void {
+    this.personaService.lista().subscribe(data => { this.perso = data; })
+  }
 
 
 }

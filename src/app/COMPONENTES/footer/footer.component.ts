@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Email } from 'src/app/model/email';
 import { EmailService } from 'src/app/service/email.service';
 import { HttpClient } from '@angular/common/http';
@@ -11,9 +11,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  email:Email;
-  contactForm: FormGroup; 
- 
+  email: Email;
+  contactForm: FormGroup;
+
 
   constructor(private formBuilder: FormBuilder, private contactFormService: EmailService) {
     this.contactForm = this.formBuilder.group({ // añade estas líneas
@@ -21,7 +21,7 @@ export class FooterComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
     });
-   }
+  }
 
   ngOnInit(): void {
   }
@@ -42,12 +42,12 @@ export class FooterComponent implements OnInit {
       console.log('Formulario inválido');
     }
   }
-  
-  
-    
+
+
+
 
   public onSubmit() {
     console.log('Formulario enviado');
     this.enviarEmail();
   }
-  }   
+}   
