@@ -1,37 +1,5 @@
 <footer>
     <div class="container principal">
-        <div class="row">
-            <h2>Contacto</h2>
-        </div>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <div class="row input-container">
-                <div class="col-xs-12 col-md-6">
-                    <div class="styled-input wide">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre"
-                            formControlName="name" required />
-                        <label for="name"></label>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input">
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Email"
-                            formControlName="email" required />
-                        <label for="email"></label>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                        <textarea class="form-control" id="message" name="message" placeholder="Mensaje"
-                            formControlName="message" required></textarea>
-                        <label for="message"></label>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <button type="submit" class="btn-lrg submit-btn">Enviar</button>
-                </div>
-            </div>
-        </form>
-
         <!-- Segunda parte del footer -->
         <div class="site-footer">
             <div class="container">
@@ -50,6 +18,8 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <ul class="social-icons">
+                            <li><a class="gmail" href="mailto:ignaciomaiorino50@gmail.com" target="_blank"><i
+                                class="fa-regular fa-envelope"></i></a></li>
                             <li><a class="facebook" href="https://www.facebook.com/nacho.maiorino" target="_blank"><i
                                         class="fa fa-facebook"></i></a></li>
                             <li><a class="instagram" href="https://www.instagram.com/nachomaiorino/" target="_blank"><i
