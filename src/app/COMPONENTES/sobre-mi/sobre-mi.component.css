@@ -51,18 +51,6 @@ h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#robot {
-  display: block;
-  margin: auto;
-  height: 60px;
-  filter: grayscale(100%);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all .1s ease-in-out;
-}
-
-#robot:hover {
-  filter: grayscale(0%);
-}
 
 .sbl {
   color: #667dc0;
